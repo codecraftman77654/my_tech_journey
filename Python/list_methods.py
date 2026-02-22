@@ -1,0 +1,10 @@
+basket=["Apple","Orange",5,22.73459,False,"Bat","Ball"]
+basket.reverse()
+basket.append("wicket")
+#print(basket)
+basket.insert(3,"gloves")
+#print(basket)
+basket.pop(2)
+#print(basket)
+basket.remove(22.73459)
+print(basket)

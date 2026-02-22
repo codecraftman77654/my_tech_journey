@@ -1,0 +1,6 @@
+a=(1,4,7)
+#print(a)
+#no = a.count(7)
+#print(no)
+i= a.index(4)
+print(i)
