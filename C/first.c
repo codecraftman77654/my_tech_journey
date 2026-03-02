@@ -1,3 +1,4 @@
+// our first c programme.
 #include <stdio.h>
 int main()
 {
