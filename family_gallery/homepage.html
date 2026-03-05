@@ -1,0 +1,16 @@
+<h2>Family Gallery</h2>
+
+<a href="/upload">Upload Photo</a>
+<a href="/logout">Logout</a>
+
+<hr>
+
+{% for photo in photos %}
+
+<p>Uploaded by {{photo.user}}</p>
+
+<img src="{{ url_for('static', filename='uploads/' + photo.filename) }}" width="300">
+
+<hr>
+
+{% endfor %}
