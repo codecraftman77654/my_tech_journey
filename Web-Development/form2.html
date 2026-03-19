@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brainstorming Form</title>
+</head>
+<body>
+
+  <h2>Brainstorming Form</h2>
+
+  <form>
+
+    <div>
+      <label>Name:</label><br>
+      <input type="text" name="name" required>
+    </div><br>
+
+    <div>
+      <label>Email:</label><br>
+      <input type="email" name="email" required>
+    </div><br>
+
+    <div>
+      <label>Topic / Idea Title:</label><br>
+      <input type="text" name="title" required>
+    </div><br>
+
+    <div>
+      <label>Describe Your Idea:</label><br>
+      <textarea name="idea" rows="5" cols="40" required></textarea>
+    </div><br>
+
+    <div>
+      <label>Category:</label><br>
+      <select name="category">
+        <option>Technology</option>
+        <option>Business</option>
+        <option>Education</option>
+        <option>Social Impact</option>
+        <option>Other</option>
+      </select>
+    </div><br>
+
+    <div>
+      <label>Priority Level:</label><br>
+      <input type="radio" name="priority" value="low"> Low
+      <input type="radio" name="priority" value="medium"> Medium
+      <input type="radio" name="priority" value="high"> High
+    </div><br>
+
+    <div>
+      <label>Skills Required:</label><br>
+      <input type="checkbox" name="skills" value="coding"> Coding
+      <input type="checkbox" name="skills" value="design"> Design
+      <input type="checkbox" name="skills" value="marketing"> Marketing
+      <input type="checkbox" name="skills" value="research"> Research
+    </div><br>
+
+    <div>
+      <label>Deadline:</label><br>
+      <input type="date" name="deadline">
+    </div><br>
+
+    <div>
+      <input type="submit" value="Submit Idea">
+      <input type="reset" value="Reset">
+    </div>
+
+  </form>
+
+</body>
+</html>
