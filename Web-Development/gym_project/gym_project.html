@@ -18,7 +18,8 @@
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
         url("gym_background.jpg") no-repeat center/cover;
 }
- .left{border: 2px solid #000000;
+ .left{
+    /* border: 2px solid #000000; */
     display: inline-block;
      position: absolute;
      left: 5px;
@@ -41,11 +42,12 @@
     display: block;
     width: 33%;
     margin: 20px auto;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 
  }
 
- .right{border: 2px solid navajowhite;
+ .right{
+    /* border: 2px solid navajowhite; */
      display: inline-block;
      position: absolute;
      right: 5px;
@@ -90,6 +92,36 @@
  .btn:hover{
    background-color: bisque;
  }
+
+ .container{
+    border: 2px solid white;
+    margin: 106px 80px;
+    padding: 75px;
+    width: 33%;
+    border-radius: 28px;
+ }
+
+ .form-group input {
+    text-align: center;
+    display: block;
+    width: 450px;
+    padding: 1px;
+    border: 2px solid green;
+    margin: 10px auto;
+    border-radius: 15px;
+    font-size: 25px;
+
+ }
+
+ .container h1 {
+    text-align: center;
+ }
+
+ .container button{
+    display: block;
+    width: 73%;
+    margin: 20px auto;
+ }
 </style>
 
 <body>
@@ -121,5 +153,24 @@
         </div>
 
     </header>
+
+    <div class="container">
+        <h1>Join the best gym of your area</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name : ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age : ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender : ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Address : ">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
 </body>
 </html>
