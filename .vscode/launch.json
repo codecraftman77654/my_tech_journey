@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "hello",
+      "request": "launch",
+      "mainClass": "hello",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "class_object_function",
       "request": "launch",
       "mainClass": "class_object_function",
