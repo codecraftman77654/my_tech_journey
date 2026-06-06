@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "user",
+      "request": "launch",
+      "mainClass": "user",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "sum",
       "request": "launch",
       "mainClass": "sum",
