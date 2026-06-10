@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "bool",
+      "request": "launch",
+      "mainClass": "bool",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
+      "name": "character",
+      "request": "launch",
+      "mainClass": "character",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "temperature",
       "request": "launch",
       "mainClass": "temperature",
