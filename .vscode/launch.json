@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "marks_calculator",
+      "request": "launch",
+      "mainClass": "marks_calculator",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "student_report",
       "request": "launch",
       "mainClass": "student_report",
