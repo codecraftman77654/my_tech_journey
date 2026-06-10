@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "fd",
+      "request": "launch",
+      "mainClass": "fd",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "bool",
       "request": "launch",
       "mainClass": "bool",
