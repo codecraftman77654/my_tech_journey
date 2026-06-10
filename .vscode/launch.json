@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "print_info",
+      "request": "launch",
+      "mainClass": "print_info",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
+      "name": "areaofrect",
+      "request": "launch",
+      "mainClass": "areaofrect",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "user",
       "request": "launch",
       "mainClass": "user",
