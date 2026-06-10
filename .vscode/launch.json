@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "rectangle",
+      "request": "launch",
+      "mainClass": "rectangle",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "print_info",
       "request": "launch",
       "mainClass": "print_info",
