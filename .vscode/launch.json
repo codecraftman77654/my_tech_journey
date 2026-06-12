@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "doubleToInt",
+      "request": "launch",
+      "mainClass": "doubleToInt",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "intToMain",
       "request": "launch",
       "mainClass": "intToMain",
