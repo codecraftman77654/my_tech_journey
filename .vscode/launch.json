@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SI",
+      "request": "launch",
+      "mainClass": "SI",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
+      "name": "salary_calculator",
+      "request": "launch",
+      "mainClass": "salary_calculator",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "marks_calculator",
       "request": "launch",
       "mainClass": "marks_calculator",
