@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "division",
+      "request": "launch",
+      "mainClass": "division",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "multiplication",
       "request": "launch",
       "mainClass": "multiplication",
