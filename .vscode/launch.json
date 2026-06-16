@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "charToAsci",
+      "request": "launch",
+      "mainClass": "charToAsci",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "averageOf3",
       "request": "launch",
       "mainClass": "averageOf3",
