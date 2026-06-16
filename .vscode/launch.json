@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "StudentDetail",
+      "request": "launch",
+      "mainClass": "StudentDetail",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
+      "name": "compare",
+      "request": "launch",
+      "mainClass": "compare",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "swapOfTwo",
       "request": "launch",
       "mainClass": "swapOfTwo",
