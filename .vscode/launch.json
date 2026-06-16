@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "swapOfTwo",
+      "request": "launch",
+      "mainClass": "swapOfTwo",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "charToAsci",
       "request": "launch",
       "mainClass": "charToAsci",
