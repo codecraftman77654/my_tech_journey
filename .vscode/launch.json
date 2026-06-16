@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "averageOf3",
+      "request": "launch",
+      "mainClass": "averageOf3",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "area2",
       "request": "launch",
       "mainClass": "area2",
