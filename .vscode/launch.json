@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "eligibleToVote",
+      "request": "launch",
+      "mainClass": "eligibleToVote",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "StudentDetail",
       "request": "launch",
       "mainClass": "StudentDetail",
