@@ -12,5 +12,6 @@ class eligibleToVote {
             System.out.println("Eligible To Vote");
 
         }
+        sc.close();
     }
 }
