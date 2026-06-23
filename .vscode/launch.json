@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AgeCategory",
+      "request": "launch",
+      "mainClass": "AgeCategory",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "gradeCalc",
       "request": "launch",
       "mainClass": "gradeCalc",
