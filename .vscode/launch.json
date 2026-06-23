@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "geek",
+      "request": "launch",
+      "mainClass": "geek",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
+      "name": "Geeks",
+      "request": "launch",
+      "mainClass": "Geeks",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "SalaryMeasure",
       "request": "launch",
       "mainClass": "SalaryMeasure",
