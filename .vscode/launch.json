@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "EligibilityPlacement",
+      "request": "launch",
+      "mainClass": "EligibilityPlacement",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "DayNumber",
       "request": "launch",
       "mainClass": "DayNumber",
