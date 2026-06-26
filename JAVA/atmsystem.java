@@ -6,15 +6,16 @@ class atmsystem {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Card Inserted ?");
-        int card = sc.nextInt();
+        String card = sc.next();
 
         System.out.print("Pin correct");
         int pin = sc.nextInt();
 
-        if (card == yes) {
+        if (card.equals("yes")) {
             if (pin == 855114) {
-                System.out.println("Proseed")
+                System.out.println("Proseed");
             }
         }
+        sc.close();
     }
 }
