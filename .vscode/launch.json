@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "GradeSearch",
+      "request": "launch",
+      "mainClass": "GradeSearch",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "dayGuessing",
       "request": "launch",
       "mainClass": "dayGuessing",
