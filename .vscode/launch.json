@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "countWhile",
+      "request": "launch",
+      "mainClass": "countWhile",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "CalculatorSwitch",
       "request": "launch",
       "mainClass": "CalculatorSwitch",
