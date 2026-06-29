@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "OddWhile",
+      "request": "launch",
+      "mainClass": "OddWhile",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "EvenWhile",
       "request": "launch",
       "mainClass": "EvenWhile",
