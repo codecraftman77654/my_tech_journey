@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PrintTable",
+      "request": "launch",
+      "mainClass": "PrintTable",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
+      "name": "printTable",
+      "request": "launch",
+      "mainClass": "printTable",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
+      "name": "printTbale",
+      "request": "launch",
+      "mainClass": "printTbale",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "PrintNumbers",
       "request": "launch",
       "mainClass": "PrintNumbers",
