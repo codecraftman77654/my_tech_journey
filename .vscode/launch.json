@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PrintNumbersDo",
+      "request": "launch",
+      "mainClass": "PrintNumbersDo",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "PrintOdd",
       "request": "launch",
       "mainClass": "PrintOdd",
