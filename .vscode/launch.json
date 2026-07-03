@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ReverseNumber",
+      "request": "launch",
+      "mainClass": "ReverseNumber",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "WhileNumberPrinting",
       "request": "launch",
       "mainClass": "WhileNumberPrinting",
