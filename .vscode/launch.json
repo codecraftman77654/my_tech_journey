@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ReverseFor",
+      "request": "launch",
+      "mainClass": "ReverseFor",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "EvenFor",
       "request": "launch",
       "mainClass": "EvenFor",
