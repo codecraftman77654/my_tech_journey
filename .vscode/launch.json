@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SumOfNFor",
+      "request": "launch",
+      "mainClass": "SumOfNFor",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "AlphabetFor",
       "request": "launch",
       "mainClass": "AlphabetFor",
