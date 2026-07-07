@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Table",
+      "request": "launch",
+      "mainClass": "Table",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "ReverseFor",
       "request": "launch",
       "mainClass": "ReverseFor",
