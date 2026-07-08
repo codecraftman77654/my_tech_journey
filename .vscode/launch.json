@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "NumSquare",
+      "request": "launch",
+      "mainClass": "NumSquare",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "SquarePrint",
       "request": "launch",
       "mainClass": "SquarePrint",
