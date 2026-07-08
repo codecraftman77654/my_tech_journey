@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "UserStarPrint",
+      "request": "launch",
+      "mainClass": "UserStarPrint",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
+      "name": "RevTri",
+      "request": "launch",
+      "mainClass": "RevTri",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "StarTriangle",
       "request": "launch",
       "mainClass": "StarTriangle",
