@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "NumTriangle",
+      "request": "launch",
+      "mainClass": "NumTriangle",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "NumSquare",
       "request": "launch",
       "mainClass": "NumSquare",
