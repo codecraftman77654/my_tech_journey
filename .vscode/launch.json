@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ATM_Menu",
+      "request": "launch",
+      "mainClass": "ATM_Menu",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "NumberGuessing",
       "request": "launch",
       "mainClass": "NumberGuessing",
