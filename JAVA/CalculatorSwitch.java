@@ -25,7 +25,7 @@ class CalculatorSwitch {
                 break;
 
             case '*':
-                System.out.println("result =" + (num1 * num2));
+                System.out.println("Result =" + (num1 * num2));
                 break;
 
             case '/':
