@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ArrayInt",
+      "request": "launch",
+      "mainClass": "ArrayInt",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "LoginSystem",
       "request": "launch",
       "mainClass": "LoginSystem",
