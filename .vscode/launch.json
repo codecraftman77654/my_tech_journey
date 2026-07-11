@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ArrayDouble",
+      "request": "launch",
+      "mainClass": "ArrayDouble",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "ArrayInt",
       "request": "launch",
       "mainClass": "ArrayInt",
