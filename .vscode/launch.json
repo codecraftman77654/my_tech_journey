@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "UserArray",
+      "request": "launch",
+      "mainClass": "UserArray",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
+      "name": "ArrayIntegerInput",
+      "request": "launch",
+      "mainClass": "ArrayIntegerInput",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "StringArray",
       "request": "launch",
       "mainClass": "StringArray",
