@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ReverseArray",
+      "request": "launch",
+      "mainClass": "ReverseArray",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "GradeArray",
       "request": "launch",
       "mainClass": "GradeArray",
