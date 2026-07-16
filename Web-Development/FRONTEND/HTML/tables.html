@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY TABLE</title>
+    <style>
+        /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f0f0f,#1f1f1f,#2b2b2b);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+h1{
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* Table Styling */
+
+table{
+    width: 80%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+thead{
+    background: #2c2c2c;
+}
+
+thead th{
+    padding: 18px;
+    font-size: 18px;
+    color: #00d9ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tbody td{
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    transition: 0.3s;
+}
+
+tbody tr{
+    transition: 0.3s ease;
+}
+
+tbody tr:nth-child(even){
+    background: rgba(255,255,255,0.04);
+}
+
+tbody tr:hover{
+    background: rgba(0,217,255,0.15);
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+tbody tr:hover td{
+    color: #00d9ff;
+}
+
+tbody tr:last-child td{
+    border-bottom: none;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    body{
+        padding:20px;
+    }
+
+    h1{
+        font-size:2rem;
+        text-align:center;
+    }
+
+    table{
+        width:100%;
+    }
+
+    th,td{
+        padding:12px;
+        font-size:14px;
+    }
+
+}
+    </style>
+</head>
+<body>
+      <h1> Tables in html. </h1>
+
+      <table>
+        <thead>
+                <tr>    
+                    <th>Name </th>
+                    <th>Role</th>
+                    <th>Salary</th>
+                </tr>
+
+        </thead>
+
+        <tbody>
+<tr>
+    <td>John Doe</td>
+    <td>Software Engineer</td>
+    <td>$75,000</td>
+</tr>
+<tr>
+    <td>Jane Smith</td>
+    <td>Product Manager</td>
+    <td>$85,000</td>
+</tr>
+<tr>
+    <td>Mike Johnson</td>
+    <td>UX Designer</td>
+    <td>$70,000</td>
+</tr>
+<tr>
+    <td>Emily Davis</td>    
+    <td>Marketing Specialist</td>
+    <td>$65,000</td>
+</tr>
+
+        </tbody>
+      </table>
+
+</body>
+</html>
