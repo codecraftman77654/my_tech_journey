@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "array",
+      "request": "launch",
+      "mainClass": "practice.array",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "arrInput",
       "request": "launch",
       "mainClass": "arrInput",
