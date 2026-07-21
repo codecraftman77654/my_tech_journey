@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "learnInputArray",
+      "request": "launch",
+      "mainClass": "learnInputArray",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "learnArray",
       "request": "launch",
       "mainClass": "learnArray",
