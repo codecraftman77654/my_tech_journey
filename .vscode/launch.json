@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "sumArrayInput",
+      "request": "launch",
+      "mainClass": "sumArrayInput",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "countOdd",
       "request": "launch",
       "mainClass": "countOdd",
