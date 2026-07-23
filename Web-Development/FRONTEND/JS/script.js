@@ -41,14 +41,35 @@
 // }
 
 
+// let a = 10;
+// let b = "10";
+// let c = true;
+// let d;
+
+// console.log(typeof a);
+// console.log(typeof b);
+// console.log(typeof c);
+// console.log(typeof d);
+// console.log(typeof null);
+
+
+// let num = 15;
+
+// console.log(num%2 == 0 ? "Even" : "Odd");
+
+
+// let num = 45;
+// console.log(num>40 ? "pass": "fail");
+
+
 let a = 10;
-let b = "10";
-let c = true;
-let d;
+let b = 3;
 
-console.log(typeof a);
-console.log(typeof b);
-console.log(typeof c);
-console.log(typeof d);
-console.log(typeof null);
-
+console.log(a + b);
+console.log(a % b);
+console.log(a > b);
+console.log(a == "10");
+console.log(a === "10");
+console.log(a >= 10 && b < 5);
+console.log(a >= 20 || b < 5);
+console.log(!(a < b));
