@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "averageArray",
+      "request": "launch",
+      "mainClass": "averageArray",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "SumArray",
       "request": "launch",
       "mainClass": "SumArray",
