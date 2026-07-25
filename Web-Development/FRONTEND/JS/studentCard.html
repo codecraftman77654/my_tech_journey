@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+*{
+    margin-left: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center; /*  horizontal centre */
+    align-items: center;  /* vertical centre */
+    height: 100vh;
+ 
+    
+}
+
+ h2{
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+ }
+
+.field{
+    margin-bottom: 15px;
+}
+
+.card{
+    border: 5px solid blanchedalmond;
+    border-radius: 5px;
+    background-color: rgb(228, 80, 136);
+    padding: 20px;
+    margin: 10px;
+    width: 400px;
+    box-shadow: 15px 15px 15px;
+    transition: 1s;
+}
+
+.card:hover{
+    transform: scale(2.1);
+}
+
+.btn{
+    background-color: antiquewhite;
+    width: 50px;
+    border-radius: 25px;
+    transition: all 1s;   
+}
+
+.btn:hover{
+    transform: rotate(25deg);
+    background: red;
+}
+
+
+input[type="text"]{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="card">
+        
+        <u><h2>Student Information Card</h2></u>
+   <div > Name: <input type="text" placeholder="Name of Student" id="name" class="field"> </div>
+    <div >Age : <input type="number" placeholder="Age" id="age" class="field"></div>
+    <button class="btn" >Click</button>
+    <div id="result"></div>
+    </div>
+
+
+    <script>
+    let button = document.querySelector(".btn");
+
+    button.addEventListener("click",function() {
+
+        let studentName = document.getElementById("name").value;
+        let studentAge = document.getElementById("age").value;
+
+        document.getElementById("result").innerHTML =
+        "<h3>Student Details</h3>" +
+        "Name : " + studentName +
+        "<br><br>" +
+        "Age :" + studentAge;
+    });
+
+    </script>
+
+</body>
+
+
+</html>

@@ -1,75 +1,42 @@
-// console.log("Welcome Chief");
-// console.log(10);
-// console.log(true);  
+// function showData() {
 
-// let a=10;
-// let b=20;
-// console.log(a+b);
+//     // Selecting elements
+//     let heading = document.getElementById("heading");
+//     let para = document.getElementById("para");
+//     let box = document.getElementById("box");
 
-//datatypes//
+//     // Reading values
+//     console.log("----- BEFORE CHANGES -----");
 
-// let  age =22;
-// console.log(age);
+//     console.log("innerHTML:");
+//     console.log(box.innerHTML);
 
-// let name = "Kuldeep";
-// console.log(name);
+//     console.log("innerText:");
+//     console.log(para.innerText);
 
-// let isStudent=true;
-// console.log(isStudent);
+//     console.log("textContent:");
+//     console.log(para.textContent);
 
-// let birth;
-// console.log(birth);
+//     // Changing using innerText
+//     heading.innerText = "Learning DOM Manipulation";
 
-// let user =null;
-// console.log(user);
+//     // Changing using textContent
+//     para.textContent = "This text was changed using textContent.";
 
-// let big = 123158461465989846665656446549856164435949419496994165651877465984n;
-// console.log(big);
+//     // Changing using innerHTML
+//     box.innerHTML = "<h2 style='color:blue;'>HTML Added Successfully!</h2>";
 
-
-// let student = {
-//     name : "kuldeep",
-//     age:22
-// };
-// console.log(student);
-
-// let marks = [90,85,95 ];
-// console.log(marks);
-
-// function great(){
-//     console.log("Hello");
 // }
 
+// let name = prompt("Enter your name :");
+// console.log(name); // returning name
 
-// let a = 10;
-// let b = "10";
-// let c = true;
-// let d;
+// let a = Number(prompt("Enter first number."));
+// let b = Number(prompt("Enter second number."));
+// console.log(a+b);
 
-// console.log(typeof a);
-// console.log(typeof b);
-// console.log(typeof c);
-// console.log(typeof d);
-// console.log(typeof null);
-
-
-// let num = 15;
-
-// console.log(num%2 == 0 ? "Even" : "Odd");
-
-
-// let num = 45;
-// console.log(num>40 ? "pass": "fail");
-
-
-let a = 10;
-let b = 3;
-
-console.log(a + b);
-console.log(a % b);
-console.log(a > b);
-console.log(a == "10");
-console.log(a === "10");
-console.log(a >= 10 && b < 5);
-console.log(a >= 20 || b < 5);
-console.log(!(a < b));
+function checkAge() {
+    let age = Number(document.getElementById("age").value);
+    document.getElementById("result").innerHTML =
+        age >= 18 ? "Eligible" : "Not Eligible";
+}
