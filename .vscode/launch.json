@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "JaggedArray",
+      "request": "launch",
+      "mainClass": "JaggedArray",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
+      "name": "Jagged2DArray",
+      "request": "launch",
+      "mainClass": "Jagged2DArray",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "Minimumm2DArray",
       "request": "launch",
       "mainClass": "Minimumm2DArray",
