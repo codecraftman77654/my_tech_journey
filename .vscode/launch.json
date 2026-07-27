@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Sum2DArray",
+      "request": "launch",
+      "mainClass": "Sum2DArray",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "D2Array",
       "request": "launch",
       "mainClass": "D2Array",
