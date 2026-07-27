@@ -26,6 +26,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.3s;
+    letter-spacing: 1px;
 }
 
 .logo:hover{
@@ -38,5 +39,51 @@
 
 .hero{
     height: 90vh;
-    background-image: url("../images/backgrounds/marvel-hero-banner-background.jpg")
+   background-image:
+linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+url("../images/backgrounds/marvel-background\ \(2\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    background-attachment: fixed;
+    padding-top: 40px;
 }
+
+.hero-content{
+    max-width: 550px;
+}
+
+.hero-content h1{
+    color: white;
+    font-size: 72px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero-content p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #E62429;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+   box-shadow: 0 0 30px rgba(230,36,41,0.7);
+}
+
+.btn:hover{
+    background-color: #b71c1c;
+    transform: scale(1.05);
+}
+
