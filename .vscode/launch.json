@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Minimumm2DArray",
+      "request": "launch",
+      "mainClass": "Minimumm2DArray",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "Maximum2DArray",
       "request": "launch",
       "mainClass": "Maximum2DArray",
