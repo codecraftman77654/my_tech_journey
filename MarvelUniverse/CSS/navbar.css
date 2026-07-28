@@ -2,7 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
+    /* padding: 20px 30px; */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     background-color: #202020;
 }
 
@@ -79,7 +82,7 @@ url("../images/backgrounds/marvel-background\ \(2\).jpg");
     border-radius: 8px;
     font-weight: bold;
     transition: 0.3s;
-   box-shadow: 0 0 30px rgba(230,36,41,0.7);
+   box-shadow: 0 0 15px rgba(230,36,41,0.4);
 }
 
 .btn:hover{

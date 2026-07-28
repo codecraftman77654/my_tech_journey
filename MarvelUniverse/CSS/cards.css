@@ -5,6 +5,17 @@
     /* width: 320px; */
     overflow: hidden;
     cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.card .btn{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    border-color: #E62429;
 }
 
 .card img{
@@ -13,10 +24,11 @@
     object-fit: cover;
     display: block;
     transition: transform 0.3s;
+    border-radius: 10px;
 }
 
 .card:hover img{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .heroes{
@@ -25,5 +37,20 @@
     gap: 30px;
     transform: translateY(-10px);
    /* justify-items: center; */
+   margin-top: 50px;
+   max-width: 1200px;
+   margin: 50px auto;
+}
+
+.card h2{
+    color: white;
+    margin: 15px 0 10px;
+    font-size: 24px;
+}
+
+.card p{
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
