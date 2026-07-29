@@ -35,8 +35,16 @@
 // let b = Number(prompt("Enter second number."));
 // console.log(a+b);
 
-function checkAge() {
+// function checkAge() {
+//     let age = Number(document.getElementById("age").value);
+//     document.getElementById("result").innerHTML =
+//         age >= 18 ? "Eligible" : "Not Eligible";
+// }
+
+
+// let agee = Number(prompt("Enter Age : "));
+
+function showAge() {
     let age = Number(document.getElementById("age").value);
-    document.getElementById("result").innerHTML =
-        age >= 18 ? "Eligible" : "Not Eligible";
+    console.log(age);
 }
