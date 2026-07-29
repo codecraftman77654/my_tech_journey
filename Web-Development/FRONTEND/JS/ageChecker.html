@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Checker</title>
+
+</head>
+<body>
+    <h2>Age Checker</h2>
+
+    <input type="text" name="" id="age" placeholder="Enter your age">
+    <button onclick="checckAge()">Check</button>
+    <h3 id="result"></h3>
+
+    <script>
+        function checckAge(){
+            let age = Number(document.getElementById("age").value);
+
+            if(age>18){
+                document.getElementById("result").innerHTML = "Eligible";
+            }
+            else{
+                document.getElementById("result").innerHTML = "Not Eligible";
+            }
+        }
+    </script>
+</body>
+</html>
