@@ -5,5 +5,7 @@ class mrthodGreet {
 
     public static void main(String[] args) {
         greet(" kuldeep");
+        greet(" Ramesh");
+        greet(" Suresh");
     }
 }
