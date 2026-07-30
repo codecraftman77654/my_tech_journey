@@ -44,6 +44,9 @@
 
 .stat{
     margin-bottom: 20px;
+    margin-top: 10PX;
+    color: #cccccc;
+    line-height: 1.6;
 }
 
 .stat span{
@@ -75,4 +78,59 @@
 
 .intelligence{
     width: 100%;
+}
+
+.movies{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.movie-card{
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.movie-card:hover{
+    transform: translateY(-5px);
+}
+
+.back-btn{
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.quick-facts{
+    margin: 30px 0;
+    background-color: #202020;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.fact{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px 0;
+    border-bottom: 1px solid #444;
+}
+
+.fact:last-child{
+    border-bottom: none;
+}
+
+.label{
+    color: #E62429;
+    font-weight: bold;
+    width: 35%;
+}
+
+.value{
+    color: #ffffff;
+    width: 65%;
+    text-align: right;
 }
