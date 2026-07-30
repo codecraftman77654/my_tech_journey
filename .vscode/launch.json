@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "cubeMethod",
+      "request": "launch",
+      "mainClass": "cubeMethod",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "squareMethod",
       "request": "launch",
       "mainClass": "squareMethod",
