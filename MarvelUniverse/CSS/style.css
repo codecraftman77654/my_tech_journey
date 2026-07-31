@@ -102,9 +102,27 @@ p{
     margin:auto;
 }
 
-button{
-    cursor:pointer;
-    font-family:inherit;
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+
+    background-color: var(--primary-red);
+    color: var(--text-primary);
+
+    border: none;
+    border-radius: var(--radius-medium);
+
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: var(--primary-red-hover);
+    transform: translateY(-2px);
 }
 
 ::selection{

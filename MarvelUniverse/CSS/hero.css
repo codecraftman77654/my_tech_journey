@@ -1,6 +1,59 @@
-/* ==========================================
-   HERO DETAILS
-========================================== */
+.hero-header{
+      width: min(var(--container-width)90%);
+      margin: 60px auto 50px;
+}
+
+.hero-header h1{
+    color: var(--primary-red);
+    margin-bottom: 10px;
+}
+
+.hero-header h3{
+    color: var(--text-primary);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.hero-role{
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.hero-header blockquote{
+    color: var(--text-muted);
+    font-style: italic;
+    border-left: 4px solid var(--primary-red);
+    padding-left: 20px;
+}
+
+.hero{
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+        url("/MarvelUniverse/images/backgrounds/marvel-background\ \(2\).jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content{
+    max-width: 700px;
+}
+
+.hero-content h1{
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    color: var(--text-secondary);
+}
 
 .hero-details {
     max-width: var(--container-width);
@@ -10,23 +63,33 @@
     align-items: center;
 }
 
+.hero-image{
+    flex: 0 0 350px;
+}
+
 .hero-image img {
-    width: 400px;
+    width: 100%;
     border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-medium);
 }
 
 .hero-info {
     color: var(--primary-red);
+    flex: 1;
 }
 
 .hero-info h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    color: var(--primary-red);
 }
 
 .hero-info p {
     font-size: 18px;
     line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: justify;
+    color: var(--text-secondary);
 }
 
 .hero-info h2 {
@@ -36,10 +99,13 @@
     font-size: 28px;
 }
 
-
-/* ==========================================
-   POWERS
-========================================== */
+.introduction{
+    width:min(var(--container-width),90%);
+    margin:50px auto 80px;
+    display:flex;
+    align-items:flex-start;
+    gap:60px;
+}
 
 .powers {
     list-style: none;
@@ -51,16 +117,16 @@
     font-size: 18px;
 }
 
-
-/* ==========================================
-   POWER STATS
-========================================== */
-
-.stat {
+/* .stat {
     margin-top: 10px;
     margin-bottom: 20px;
     color: var(--text-secondary);
     line-height: 1.6;
+} */
+
+.stat{
+    max-width: 700px;
+    margin: 30px auto;
 }
 
 .stat span {
@@ -94,11 +160,6 @@
     width: 100%;
 }
 
-
-/* ==========================================
-   QUICK FACTS
-========================================== */
-
 .quick-facts {
     margin: 30px 0;
     background-color: var(--bg-card);
@@ -130,17 +191,9 @@
     text-align: right;
 }
 
-
-/* ==========================================
-   MOVIE SECTION
-========================================== */
-
 .movie-section {
     padding: 60px 10%;
 }
-
-
-/* ---------- Section Header ---------- */
 
 .section-header {
     text-align: center;
@@ -228,12 +281,24 @@
     color: var(--text-primary);
 }
 
-
-/* ==========================================
-   BACK BUTTON
-========================================== */
-
 .back-btn {
     max-width: var(--container-width);
     margin: 40px auto 0;
+}
+
+
+.stats-section h2,
+.power-section h2,
+.quick-facts-section h2,
+.movie-section h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.power-section,
+.stats-section,
+.quick-facts-section,
+.movie-section{
+    width:min(var(--container-width),90%);
+    margin:80px auto;
 }
