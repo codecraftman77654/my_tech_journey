@@ -1,11 +1,11 @@
 .card{
-    background-color: #202020;
+    background-color:var(--bg-card);
     padding: 20px;
-    border-radius: 12px;
-    /* width: 320px; */
+    border-radius: var(--radius-medium);
     overflow: hidden;
     cursor: pointer;
     border: 2px solid transparent;
+    transition: transform var(--transition), border-color var(--transition);
 }
 
 .card .btn{
@@ -15,7 +15,7 @@
 
 .card:hover{
     transform: translateY(-10px);
-    border-color: #E62429;
+    border-color: var(--primary-red);
 }
 
 .card img{
@@ -23,7 +23,7 @@
     height: 300px;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s;
+    transition: transform var(--transition);
     border-radius: 10px;
 }
 
@@ -32,18 +32,14 @@
 }
 
 .heroes{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    transform: translateY(-10px);
-   /* justify-items: center; */
-   margin-top: 50px;
-   max-width: 1200px;
-   margin: 50px auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:50px;
 }
 
 .card h2{
-    color: white;
+    color:var(--text-secondary);
     margin: 15px 0 10px;
     font-size: 24px;
 }
