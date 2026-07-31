@@ -1,136 +1,239 @@
-.hero-details{
-    max-width: 1200px;
+/* ==========================================
+   HERO DETAILS
+========================================== */
+
+.hero-details {
+    max-width: var(--container-width);
     margin: 60px auto;
     display: flex;
     gap: 50px;
     align-items: center;
 }
 
-.hero-image img{
+.hero-image img {
     width: 400px;
-    border-radius: 15px;
+    border-radius: var(--radius-medium);
 }
 
-.hero-info{
-    color: red;
+.hero-info {
+    color: var(--primary-red);
 }
 
-.hero-info h1{
+.hero-info h1 {
     font-size: 48px;
     margin-bottom: 20px;
 }
 
-.hero-info p{
+.hero-info p {
     font-size: 18px;
     line-height: 1.8;
 }
 
-.hero-info h2{
+.hero-info h2 {
     margin-top: 30px;
     margin-bottom: 15px;
-    color: #E62429;
+    color: var(--primary-red);
     font-size: 28px;
 }
 
-.powers{
+
+/* ==========================================
+   POWERS
+========================================== */
+
+.powers {
     list-style: none;
     padding: 0;
 }
 
-.powers li{
+.powers li {
     margin-bottom: 12px;
     font-size: 18px;
 }
 
-.stat{
+
+/* ==========================================
+   POWER STATS
+========================================== */
+
+.stat {
+    margin-top: 10px;
     margin-bottom: 20px;
-    margin-top: 10PX;
-    color: #cccccc;
+    color: var(--text-secondary);
     line-height: 1.6;
 }
 
-.stat span{
+.stat span {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
 }
 
-.bar{
+.bar {
     width: 100%;
     height: 12px;
-    background-color: #444;
-    border-radius: 20px;
+    background-color: var(--border-color);
+    border-radius: var(--radius-large);
     overflow: hidden;
 }
 
-.fill{
+.fill {
     height: 100%;
-    background-color: #E62429;
+    background-color: var(--primary-red);
 }
 
-.strength{
+.strength {
     width: 90%;
 }
 
-.speed{
+.speed {
     width: 75%;
 }
 
-.intelligence{
+.intelligence {
     width: 100%;
 }
 
-.movies{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
 
-.movie-card{
-    background-color: #202020;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
+/* ==========================================
+   QUICK FACTS
+========================================== */
 
-.movie-card:hover{
-    transform: translateY(-5px);
-}
-
-.back-btn{
-    max-width: 1200px;
-    margin: 40px auto 0;
-}
-
-.quick-facts{
+.quick-facts {
     margin: 30px 0;
-    background-color: #202020;
-    border-radius: 12px;
+    background-color: var(--bg-card);
+    border-radius: var(--radius-medium);
     padding: 25px;
 }
 
-.fact{
+.fact {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 12px 0;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.fact:last-child{
+.fact:last-child {
     border-bottom: none;
 }
 
-.label{
-    color: #E62429;
-    font-weight: bold;
+.label {
     width: 35%;
+    color: var(--primary-red);
+    font-weight: bold;
 }
 
-.value{
-    color: #ffffff;
+.value {
     width: 65%;
+    color: var(--text-primary);
     text-align: right;
+}
+
+
+/* ==========================================
+   MOVIE SECTION
+========================================== */
+
+.movie-section {
+    padding: 60px 10%;
+}
+
+
+/* ---------- Section Header ---------- */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+
+/* ---------- Movie Grid ---------- */
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/* ---------- Movie Card ---------- */
+
+.movie-card {
+    width: 220px;
+    background-color: var(--bg-card);
+    border-radius: var(--radius-medium);
+    overflow: hidden;
+    text-align: center;
+    transition: transform var(--transition),
+                box-shadow var(--transition);
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-medium);
+}
+
+
+/* ---------- Movie Poster ---------- */
+
+.movie-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+
+/* ---------- Movie Text ---------- */
+
+.movie-card h3 {
+    margin: 18px 15px 10px;
+    font-size: 22px;
+    color: var(--text-primary);
+}
+
+.movie-card p {
+    margin: 6px 0;
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+
+/* ---------- Movie Link ---------- */
+
+.movie-card a {
+    display: inline-block;
+    margin: 18px 0 22px;
+    color: var(--primary-red);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color var(--transition);
+}
+
+.movie-card a:hover {
+    color: var(--text-primary);
+}
+
+
+/* ==========================================
+   BACK BUTTON
+========================================== */
+
+.back-btn {
+    max-width: var(--container-width);
+    margin: 40px auto 0;
 }

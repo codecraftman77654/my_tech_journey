@@ -1,92 +1,53 @@
+/* ==========================================
+   NAVBAR
+========================================== */
+
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 20px 30px; */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #202020;
+
+    padding: 20px 0;
+    background-color: var(--bg-secondary);
 }
 
-.nav-links{
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.nav-links a{
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-    font-size: 18px;
-    
-}
+/* ==========================================
+   LOGO
+========================================== */
 
 .logo{
-    color: #E62429;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.3s;
+    font-size: 1.75rem;
+    font-weight: 700;
     letter-spacing: 1px;
+
+    color: var(--primary-red);
+
+    cursor: pointer;
+    transition: var(--transition);
 }
 
 .logo:hover{
     transform: scale(1.05);
 }
 
-.nav-links a:hover{
-    color: #E62429;
-}
+/* ==========================================
+   NAVIGATION LINKS
+========================================== */
 
-.hero{
-    height: 90vh;
-   background-image:
-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-url("../images/backgrounds/marvel-background\ \(2\).jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.nav-links{
     display: flex;
     align-items: center;
-    padding-left: 80px;
-    background-attachment: fixed;
-    padding-top: 40px;
+    gap: 30px;
 }
 
-.hero-content{
-    max-width: 550px;
+.nav-links a{
+    color: var(--text-primary);
+    font-size: 1.125rem;
+    font-weight: 500;
+
+    transition: var(--transition);
 }
 
-.hero-content h1{
-    color: white;
-    font-size: 72px;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
+.nav-links a:hover{
+    color: var(--primary-red);
 }
-
-.hero-content p{
-    color: white;
-    font-size: 20px;
-    margin-bottom: 30px;
-    line-height: 1.6;
-}
-
-.btn{
-    display: inline-block;
-    background-color: #E62429;
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: 0.3s;
-   box-shadow: 0 0 15px rgba(230,36,41,0.4);
-}
-
-.btn:hover{
-    background-color: #b71c1c;
-    transform: scale(1.05);
-}
-
