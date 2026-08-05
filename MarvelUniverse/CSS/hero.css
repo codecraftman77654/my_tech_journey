@@ -255,8 +255,9 @@
 
 .armour-card img{
     width: 100%;
-    height: 300px;
+    height: 500px;
     object-fit: cover;
+    object-position: top center;
 }
 
 .armour-card h3{
@@ -276,6 +277,152 @@
     color: var(--text-secondary);
     line-height: 1.7;
 }
+
+
+/* ALLIES */
+
+.allies-section{
+    width:min(var(--container-width),90%);
+    margin:100px auto;
+}
+
+.allies-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.ally-card{
+    background:var(--bg-card);
+    border-radius:var(--radius-medium);
+    overflow:hidden;
+    text-align:center;
+    border:2px solid transparent;
+    transition:var(--transition);
+    box-shadow:var(--shadow-small);
+}
+
+.ally-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary-red);
+    box-shadow:var(--shadow-medium);
+}
+
+.ally-card img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    object-position: top center;
+}
+
+.ally-card h3{
+    margin:20px 15px 10px;
+    color:var(--text-primary);
+    color: #E62429;
+}
+
+.ally-card p{
+    margin:0 18px 25px;
+    color:var(--text-secondary);
+    line-height:1.7;
+}
+
+
+/* ENEMIES */
+
+.enemies-section{
+    width:min(var(--container-width),90%);
+    margin:100px auto;
+}
+
+.enemies-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.enemy-card{
+    background:var(--bg-card);
+    border-radius:var(--radius-medium);
+    overflow:hidden;
+    border:2px solid transparent;
+    box-shadow:var(--shadow-small);
+    transition:var(--transition);
+    text-align:center;
+}
+
+.enemy-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary-red);
+    box-shadow:var(--shadow-medium);
+}
+
+.enemy-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    object-position:top center;
+}
+
+.enemy-card h3{
+    margin:20px 15px 10px;
+    color: #E62429;
+}
+
+.enemy-card p{
+    margin:0 20px 25px;
+    color:var(--text-secondary);
+    line-height:1.7;
+}
+
+
+/* timeline */
+
+.timeline-section{
+    width:min(var(--container-width),90%);
+    margin:100px auto;
+}
+
+.timeline{
+    max-width:850px;
+    margin:50px auto;
+    border-left:4px solid var(--primary-red);
+    padding-left:35px;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:50px;
+}
+
+.timeline-item:last-child{
+    margin-bottom:0;
+}
+
+.timeline-item::before{
+    content:"";
+    position:absolute;
+    left:-45px;
+    top:8px;
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:var(--primary-red);
+    border:4px solid var(--bg-primary);
+}
+
+.timeline-item h3{
+    color:var(--primary-red);
+    margin-bottom:12px;
+}
+
+.timeline-item p{
+    color:var(--text-secondary);
+    line-height:1.8;
+}
+
+
+/* Quick Facts */
 .quick-facts {
     margin: 30px 0;
     background-color: var(--bg-card);
