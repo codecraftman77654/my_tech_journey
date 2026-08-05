@@ -56,8 +56,8 @@
 }
 
 .hero-details {
-    max-width: var(--container-width);
-    margin: 60px auto;
+     width:min(var(--container-width),90%);
+    margin: 100px auto;
     display: flex;
     gap: 50px;
     align-items: center;
@@ -129,6 +129,11 @@
     border-left:4px solid var(--primary-red);
     border-radius:var(--radius-small);
     line-height:1.8;
+}
+
+.power-section{
+      width:min(var(--container-width),90%);
+      margin:100px auto;
 }
 
 /* .stat {
@@ -421,13 +426,69 @@
     line-height:1.8;
 }
 
+/* Quotes */
 
-/* Quick Facts */
-.quick-facts {
-    margin: 30px 0;
-    background-color: var(--bg-card);
+.quotes-section{
+    width: min(var(--container-width), 90%);
+    margin: 100px auto;
+}
+
+.quotes-container{
+    display: grid;
+    gap: 35px;
+}
+
+.quote-card{
+    background: linear-gradient(135deg, #232323, #1a1a1a);
+    border-left: 6px solid var(--primary-red);
     border-radius: var(--radius-medium);
-    padding: 25px;
+    padding: 35px;
+    box-shadow: var(--shadow-medium);
+    transition: var(--transition);
+}
+
+.quote-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.45);
+}
+
+.quote-card blockquote{
+    position: relative;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.8;
+    margin-bottom: 25px;
+    padding-left: 35px;
+}
+
+.quote-card blockquote::before{
+    content: "❝";
+    position: absolute;
+    left: 0;
+    top: -15px;
+    font-size: 3rem;
+    color: var(--primary-red);
+    opacity: .8;
+}
+
+.quote-info{
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}
+
+.quote-info p{
+    margin: 10px 0;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.quote-info strong{
+    color: var(--primary-red);
+    display: inline-block;
+    width: 85px;
 }
 
 .fact {
@@ -455,7 +516,8 @@
 }
 
 .movie-section {
-    padding: 60px 10%;
+    width: min(var(--container-width),90%);
+    margin: 100px auto;
 }
 
 .section-header {
@@ -550,18 +612,44 @@
 }
 
 
-.stats-section h2,
 .power-section h2,
+.stats-section h2,
+.armour-section h2,
+.allies-section h2,
+.enemies-section h2,
+.timeline-section h2,
 .quick-facts-section h2,
+.quotes-section h2,
 .movie-section h2{
-    text-align:center;
-    margin-bottom:40px;
+
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .power-section,
 .stats-section,
+.armour-section,
+.allies-section,
+.enemies-section,
+.timeline-section,
 .quick-facts-section,
+.quotes-section,
 .movie-section{
-    width:min(var(--container-width),90%);
-    margin:80px auto;
+
+    width: min(var(--container-width), 90%);
+    margin: 80px auto;
+}
+
+.section-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2{
+    margin-bottom: 15px;
+}
+
+.section-header p{
+    max-width: 700px;
+    margin: 0 auto;
 }

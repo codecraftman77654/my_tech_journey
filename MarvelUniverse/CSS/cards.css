@@ -50,3 +50,29 @@
     margin-bottom: 20px;
 }
 
+/*
+   HERO SEARCH
+ */
+
+.search-section{
+    margin:50px 0 20px;
+}
+
+.search-section input{
+    width:100%;
+    max-width:500px;
+    display:block;
+    margin:auto;
+    padding:15px 20px;
+    font-size:1rem;
+    border:none;
+    border-radius:var(--radius-medium);
+    background:var(--bg-card);
+    color:var(--text-primary);
+    outline:none;
+    transition:var(--transition);
+}
+
+.search-section input:focus{
+    box-shadow:0 0 0 3px rgba(230,36,41,.35);
+}
