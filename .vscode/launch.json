@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "overload",
+      "request": "launch",
+      "mainClass": "overload",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "studentDetailMethod",
       "request": "launch",
       "mainClass": "studentDetailMethod",
