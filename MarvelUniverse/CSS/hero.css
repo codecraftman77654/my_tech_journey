@@ -68,29 +68,39 @@
 }
 
 .hero-image img {
-    width: 100%;
-    border-radius: var(--radius-medium);
-    box-shadow: var(--shadow-medium);
+   
+    width:100%;
+    border-radius:var(--radius-medium);
+    border:3px solid var(--primary-red);
+    box-shadow:
+        0 0 25px rgba(230,36,41,.25);
+    transition:var(--transition);
 }
+
+.hero-image img:hover{
+    transform:scale(1.02);
+}
+
 
 .hero-info {
     color: var(--primary-red);
     flex: 1;
 }
 
-.hero-info h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: var(--primary-red);
+.hero-info h1{
+    color:var(--primary-red);
+    margin-bottom:25px;
+    font-size:3rem;
 }
 
 .hero-info p {
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 25px;
-    text-align: justify;
-    color: var(--text-secondary);
+    margin-bottom:22px;
+    color:var(--text-secondary);
+    font-size:1.08rem;
+    line-height:1.9;
+    text-align:justify;
 }
+
 
 .hero-info h2 {
     margin-top: 30px;
@@ -112,9 +122,13 @@
     padding: 0;
 }
 
-.powers li {
-    margin-bottom: 12px;
-    font-size: 18px;
+.powers li{
+    padding:16px 20px;
+    margin-bottom:18px;
+    background:var(--bg-card);
+    border-left:4px solid var(--primary-red);
+    border-radius:var(--radius-small);
+    line-height:1.8;
 }
 
 /* .stat {
@@ -124,28 +138,59 @@
     line-height: 1.6;
 } */
 
+.stats-section{
+    width: min(var(--container-width), 90%);
+    margin: 100px auto;
+}
+
+.stats-section h2{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 .stat{
-    max-width: 700px;
-    margin: 30px auto;
+    max-width: 850px;
+    margin: 0 auto 50px;
+    background: var(--bg-card);
+    padding: 25px 30px;
+    border-radius: var(--radius-medium);
+    box-shadow:var(--shadow-medium);
+    transition: var(--transition); 
+}
+
+.stats:hover{
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-medium);
 }
 
 .stat span {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
 }
 
 .bar {
     width: 100%;
     height: 12px;
-    background-color: var(--border-color);
-    border-radius: var(--radius-large);
+    background: #343434;
+    /* background-color: var(--border-color); */
+    border-radius: 50px;
     overflow: hidden;
+    margin-bottom: 18px;
 }
 
 .fill {
     height: 100%;
-    background-color: var(--primary-red);
+    /* background-color: var(--primary-red); */
+    background: linear-gradient(
+        90deg,
+        #E62429,
+        #ff4a4f);
+        border-radius: 50px;  
 }
 
 .strength {
@@ -153,13 +198,84 @@
 }
 
 .speed {
-    width: 75%;
+    width: 80%;
 }
 
 .intelligence {
     width: 100%;
 }
 
+.stat p{
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* // armour section// */
+
+.armour-section{
+    width: min(var(--container-width),90%);
+    margin: 100px auto;
+}
+
+.armour-section h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-description{
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.armour-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 30px;
+}
+
+.armour-card{
+    background: var(--bg-card);
+    border-radius: var(--radius-medium);
+    overflow: hidden;
+    box-shadow: var(--shadow-small);
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.armour-card:hover{
+    transform: translateY(-8px);
+    border-color: var(--primary-red);
+    box-shadow: var(--shadow-medium);
+}
+
+.armour-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.armour-card h3{
+    margin: 20px 20px 10px;
+    color: var(--text-primary);
+}
+
+.armour-card .movie{
+    margin: 0 20px;
+    color: var(--primary-red);
+    font-weight: 600;
+    font-size: .95rem;
+}
+
+.armour-card p{
+    margin: 15px 20px 25px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
 .quick-facts {
     margin: 30px 0;
     background-color: var(--bg-card);

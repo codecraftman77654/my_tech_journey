@@ -67,10 +67,6 @@ ul{
     list-style:none;
 }
 
-/* ==========================================
-   TYPOGRAPHY
-========================================== */
-
 h1{
     font-size:3.5rem;
     font-weight:700;
@@ -91,11 +87,6 @@ h3{
 p{
     color:var(--text-secondary);
 }
-
-
-/* ==========================================
-   CONTAINER
-========================================== */
 
 .container{
     width:min(var(--container-width),90%);
