@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "oov",
+      "request": "launch",
+      "mainClass": "oov",
+      "projectName": "my_tech_journey_ddc23597"
+    },
+    {
+      "type": "java",
       "name": "overloadS",
       "request": "launch",
       "mainClass": "overloadS",
