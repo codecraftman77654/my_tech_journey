@@ -19,12 +19,12 @@
         <div class="container navbar">
            <div class="logo"> Marvel Universe</div>
      
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="heroes.html">Heroes</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+       <ul class="nav-links">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="heroes.html" class="nav-link">Heroes</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+</ul>
          </div>
     </nav>
       
@@ -38,17 +38,32 @@
 </section>
 
     <main>
+
+        <!-- filter button -->
+
+<section class="filter-section">
+    <div class="container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="avenger"> Avengers</button>
+            <button class="filter-btn" data-filter="god">Gods</button>
+        </div>
+    </div>
+</section>
+
+<!-- hero container -->
+ 
     <section>
         <div class="container">
 <div class="heroes">
-<div class="card hero-card">
+<div class="card hero-card" data-category="avenger scientist">
     <img src="images/heroes/ironman/hero_images/ironmancard.png" alt="Iron Man">
     <h2>Iron Man</h2>
     <p>A genius billionaire, inventor, and superhero who protects the world using his advanced armour</p>
     <a href="hero.html" class="btn">View Details</a>
 </div>
 
-    <div class="card hero-card">
+    <div class="card hero-card" data-category="avenger god">
     <img src="images/heroes/thor/thor.jpg" alt="Thor">
     <h2>Thor</h2>
     <p>The god of thunder who wields the mighty hammer Mjolnir to defend Asgard and Earth.</p>
@@ -56,7 +71,7 @@
 </div>
 
 
-<div class="card hero-card">
+<div class="card hero-card" data-category="avenger scientist">
     <img src="images/heroes/hulk/hulk_card.jpg" alt="Hulk">
     <h2>Hulk</h2>
     <p>Bruce Banner transforms into the unstoppable green giant whenever his anger takes over.</p>

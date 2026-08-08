@@ -76,3 +76,41 @@
 .search-section input:focus{
     box-shadow:0 0 0 3px rgba(230,36,41,.35);
 }
+
+
+/*  HERO FILTER  */
+
+.filter-section{
+    margin: 50px 0 20px;
+}
+
+.filter-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-btn{
+    padding: 10px 22px;
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--radius-medium);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn:hover{
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+}
+
+.filter-btn.active{
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+    color: var(--text-primary);
+}

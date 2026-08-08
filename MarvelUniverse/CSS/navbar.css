@@ -44,3 +44,7 @@
 .nav-links a:focus-visible{
     color: var(--primary-red);
 }
+
+.nav-links .nav-link.active{
+    color: var(--primary-red);
+}
