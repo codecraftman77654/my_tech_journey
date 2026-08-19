@@ -114,3 +114,11 @@
     border-color: var(--primary-red);
     color: var(--text-primary);
 }
+
+.hero-count{
+    text-align: center;
+    margin: 20px 0 30px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+}

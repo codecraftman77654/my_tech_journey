@@ -36,33 +36,59 @@ navLinks.forEach(function(link){
 });
 
 // HERO  FILTER
- const filterButtons = document.querySelectorAll(".filter-btn");
- const heroCards = document.querySelectorAll(".hero-card");
+const filterButtons = document.querySelectorAll(".filter-btn");
+const heroCards = document.querySelectorAll(".hero-card");
+const heroCount = document.getElementById("heroCount");
 
- filterButtons.forEach(function(button){
-    button.addEventListener("click", function(){
+filterButtons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
         const selectedFilter = button.dataset.filter;
 
-        // change active button
-
-        filterButtons.forEach(function(btn){
+        // Change active button
+        filterButtons.forEach(function(btn) {
             btn.classList.remove("active");
         });
+
         button.classList.add("active");
 
-        // filter hero cards
 
-        heroCards.forEach(function(card){
+        // Keep track of visible heroes
+        let visibleHeroes = 0;
+
+
+        // Filter hero cards
+        heroCards.forEach(function(card) {
+
             const categories = card.dataset.category;
 
-            if(
+            if (
                 selectedFilter === "all" ||
                 categories.includes(selectedFilter)
-            ){
+            ) {
+
                 card.style.display = "block";
-            }else {
+
+                visibleHeroes++;
+
+            } else {
+
                 card.style.display = "none";
+
             }
+
         });
+
+
+        // Update hero count
+        if (heroCount) {
+
+            heroCount.textContent =
+                `Showing ${visibleHeroes} Heroes`;
+
+        }
+
     });
- });
+
+});
