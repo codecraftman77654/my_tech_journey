@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Pilot | Innovate360</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <i class="bi bi-lightbulb-fill"></i>
+            <span>Innovate360</span>
+        </div>
+
+        <div class="sidebar-section">
+
+            <small>MAIN</small>
+
+            <a href="dashboard.html" class="sidebar-link">
+                <i class="bi bi-grid-1x2-fill"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="problems.html" class="sidebar-link">
+                <i class="bi bi-search"></i>
+                <span>Find Problems</span>
+            </a>
+
+            <a href="applications.html" class="sidebar-link">
+                <i class="bi bi-file-earmark-text-fill"></i>
+                <span>My Applications</span>
+                <span class="sidebar-badge">4</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-section">
+
+            <small>PROJECTS</small>
+
+            <a href="pilot.html" class="sidebar-link active">
+                <i class="bi bi-rocket-takeoff-fill"></i>
+                <span>My Pilots</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-section">
+
+            <small>ACCOUNT</small>
+
+            <a href="profile.html" class="sidebar-link">
+                <i class="bi bi-person-circle"></i>
+                <span>Startup Profile</span>
+            </a>
+
+            <a href="../notifications.html" class="sidebar-link">
+                <i class="bi bi-bell"></i>
+                <span>Notifications</span>
+                <span class="sidebar-badge">3</span>
+            </a>
+
+            <a href="../index.html" class="sidebar-link">
+                <i class="bi bi-box-arrow-left"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-footer">
+
+            <div class="government-user">
+
+                <div class="user-avatar startup-user-avatar">
+                    TN
+                </div>
+
+                <div>
+                    <strong>TechNova Solutions</strong>
+                    <small>Startup Account</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="dashboard-main">
+
+        <!-- TOPBAR -->
+
+        <header class="dashboard-topbar">
+
+            <div class="breadcrumb-text">
+                Startup / My Pilots
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification-btn">
+
+                    <i class="bi bi-bell"></i>
+
+                    <span></span>
+
+                </button>
+
+                <div class="topbar-profile">
+
+                    <div class="user-avatar startup-user-avatar">
+                        TN
+                    </div>
+
+                    <div class="d-none d-md-block">
+
+                        <strong>
+                            TechNova Solutions
+                        </strong>
+
+                        <small>
+                            Startup Account
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <div class="dashboard-content">
+
+            <!-- HEADER -->
+
+            <div class="pilot-page-header">
+
+                <div>
+
+                    <span class="page-eyebrow">
+                        PILOT MANAGEMENT
+                    </span>
+
+                    <h1>
+                        My Pilot
+                    </h1>
+
+                    <p>
+                        Manage your active government pilot and track
+                        progress towards deployment.
+                    </p>
+
+                </div>
+
+                <span class="active-pilot-badge">
+
+                    <i class="bi bi-circle-fill"></i>
+
+                    Pilot Active
+
+                </span>
+
+            </div>
+
+
+            <!-- ================= PILOT OVERVIEW ================= -->
+
+            <div class="pilot-overview-card">
+
+                <div class="pilot-overview-main">
+
+                    <div class="pilot-large-icon">
+
+                        <i class="bi bi-rocket-takeoff"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span class="pilot-id">
+                            PILOT-2026-018
+                        </span>
+
+                        <h2>
+                            GovPilot
+                        </h2>
+
+                        <p>
+                            Startup Friendly Public Procurement
+                        </p>
+
+                        <div class="pilot-government">
+
+                            <i class="bi bi-bank"></i>
+
+                            Government of Maharashtra
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="pilot-overview-progress">
+
+                    <div class="pilot-progress-heading">
+
+                        <span>
+                            Overall Progress
+                        </span>
+
+                        <strong id="pilotPercentage">
+                            68%
+                        </strong>
+
+                    </div>
+
+                    <div class="pilot-main-progress">
+
+                        <div
+                            id="pilotProgress"
+                            style="width:68%">
+                        </div>
+
+                    </div>
+
+                    <small>
+                        Expected completion: 30 Sep 2026
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= STATS ================= -->
+
+            <div class="pilot-stats">
+
+                <div class="pilot-stat">
+
+                    <i class="bi bi-calendar-check"></i>
+
+                    <div>
+
+                        <span>
+                            Start Date
+                        </span>
+
+                        <strong>
+                            01 Aug 2026
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="pilot-stat">
+
+                    <i class="bi bi-calendar-event"></i>
+
+                    <div>
+
+                        <span>
+                            End Date
+                        </span>
+
+                        <strong>
+                            30 Sep 2026
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="pilot-stat">
+
+                    <i class="bi bi-list-check"></i>
+
+                    <div>
+
+                        <span>
+                            Milestones
+                        </span>
+
+                        <strong>
+                            3 / 5
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="pilot-stat">
+
+                    <i class="bi bi-star-fill"></i>
+
+                    <div>
+
+                        <span>
+                            Current Score
+                        </span>
+
+                        <strong>
+                            86 / 100
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- LEFT -->
+
+                <div class="col-lg-8">
+
+
+                    <!-- MILESTONES -->
+
+                    <div class="dashboard-card mb-4">
+
+                        <div class="card-header-custom">
+
+                            <div>
+
+                                <h5>
+                                    Pilot Milestones
+                                </h5>
+
+                                <p>
+                                    Track the progress of your pilot
+                                    implementation.
+                                </p>
+
+                            </div>
+
+                            <span class="milestone-count">
+                                3 / 5 Completed
+                            </span>
+
+                        </div>
+
+
+                        <div class="pilot-milestones">
+
+
+                            <!-- MILESTONE 1 -->
+
+                            <div class="milestone completed">
+
+                                <div class="milestone-number">
+
+                                    <i class="bi bi-check-lg"></i>
+
+                                </div>
+
+                                <div class="milestone-content">
+
+                                    <div>
+
+                                        <strong>
+                                            Platform Setup
+                                        </strong>
+
+                                        <span>
+                                            Completed
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Configure the platform and
+                                        integrate initial government
+                                        workflows.
+                                    </p>
+
+                                    <small>
+                                        Completed on 08 Aug 2026
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- MILESTONE 2 -->
+
+                            <div class="milestone completed">
+
+                                <div class="milestone-number">
+
+                                    <i class="bi bi-check-lg"></i>
+
+                                </div>
+
+                                <div class="milestone-content">
+
+                                    <div>
+
+                                        <strong>
+                                            Department Onboarding
+                                        </strong>
+
+                                        <span>
+                                            Completed
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Onboard participating departments
+                                        and configure their challenges.
+                                    </p>
+
+                                    <small>
+                                        Completed on 17 Aug 2026
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- MILESTONE 3 -->
+
+                            <div class="milestone current">
+
+                                <div class="milestone-number">
+                                    3
+                                </div>
+
+                                <div class="milestone-content">
+
+                                    <div>
+
+                                        <strong>
+                                            User Testing
+                                        </strong>
+
+                                        <span>
+                                            In Progress
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Conduct user testing with selected
+                                        government departments and startups.
+                                    </p>
+
+                                    <div class="milestone-progress">
+
+                                        <div
+                                            style="width:70%">
+                                        </div>
+
+                                    </div>
+
+                                    <small>
+                                        70% complete · Due 25 Aug 2026
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- MILESTONE 4 -->
+
+                            <div class="milestone">
+
+                                <div class="milestone-number">
+                                    4
+                                </div>
+
+                                <div class="milestone-content">
+
+                                    <div>
+
+                                        <strong>
+                                            Performance Evaluation
+                                        </strong>
+
+                                        <span>
+                                            Upcoming
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Measure solution performance against
+                                        predefined pilot KPIs.
+                                    </p>
+
+                                    <small>
+                                        Starts 26 Aug 2026
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- MILESTONE 5 -->
+
+                            <div class="milestone">
+
+                                <div class="milestone-number">
+                                    5
+                                </div>
+
+                                <div class="milestone-content">
+
+                                    <div>
+
+                                        <strong>
+                                            Final Pilot Report
+                                        </strong>
+
+                                        <span>
+                                            Upcoming
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Submit the final pilot report and
+                                        recommendations for scale-up.
+                                    </p>
+
+                                    <small>
+                                        Due 30 Sep 2026
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- KPI -->
+
+                    <div class="dashboard-card">
+
+                        <div class="card-header-custom">
+
+                            <div>
+
+                                <h5>
+                                    Pilot Performance
+                                </h5>
+
+                                <p>
+                                    Current performance against
+                                    predefined KPIs.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="pilot-kpi">
+
+                            <div class="kpi-row">
+
+                                <div>
+
+                                    <strong>
+                                        Department Adoption
+                                    </strong>
+
+                                    <span>
+                                        Target: 80%
+                                    </span>
+
+                                </div>
+
+                                <strong>
+                                    86%
+                                </strong>
+
+                            </div>
+
+                            <div class="kpi-bar">
+                                <div style="width:86%"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="pilot-kpi">
+
+                            <div class="kpi-row">
+
+                                <div>
+
+                                    <strong>
+                                        User Satisfaction
+                                    </strong>
+
+                                    <span>
+                                        Target: 85%
+                                    </span>
+
+                                </div>
+
+                                <strong>
+                                    91%
+                                </strong>
+
+                            </div>
+
+                            <div class="kpi-bar">
+                                <div style="width:91%"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="pilot-kpi">
+
+                            <div class="kpi-row">
+
+                                <div>
+
+                                    <strong>
+                                        Process Efficiency
+                                    </strong>
+
+                                    <span>
+                                        Target: 80%
+                                    </span>
+
+                                </div>
+
+                                <strong>
+                                    82%
+                                </strong>
+
+                            </div>
+
+                            <div class="kpi-bar">
+                                <div style="width:82%"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+
+                <div class="col-lg-4">
+
+
+                    <!-- GOVERNMENT CONTACT -->
+
+                    <div class="dashboard-card mb-4">
+
+                        <h5 class="pilot-side-title">
+                            Government Contact
+                        </h5>
+
+                        <div class="pilot-contact">
+
+                            <div class="contact-avatar">
+                                AS
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Ananya Sharma
+                                </strong>
+
+                                <small>
+                                    Department Coordinator
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                        <div class="contact-info">
+
+                            <span>
+                                <i class="bi bi-envelope"></i>
+                                coordinator@gov.in
+                            </span>
+
+                            <span>
+                                <i class="bi bi-building"></i>
+                                Innovation Department
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="btn btn-outline-primary w-100 pilot-message-btn">
+
+                            <i class="bi bi-chat"></i>
+
+                            Contact Coordinator
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- RECENT ACTIVITY -->
+
+                    <div class="dashboard-card mb-4">
+
+                        <h5 class="pilot-side-title">
+                            Recent Activity
+                        </h5>
+
+                        <div class="pilot-activity">
+
+                            <div class="activity-dot green"></div>
+
+                            <div>
+
+                                <strong>
+                                    Milestone approved
+                                </strong>
+
+                                <small>
+                                    Department Onboarding
+                                </small>
+
+                                <span>
+                                    Yesterday
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="pilot-activity">
+
+                            <div class="activity-dot blue"></div>
+
+                            <div>
+
+                                <strong>
+                                    Feedback received
+                                </strong>
+
+                                <small>
+                                    User Testing
+                                </small>
+
+                                <span>
+                                    2 days ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="pilot-activity">
+
+                            <div class="activity-dot orange"></div>
+
+                            <div>
+
+                                <strong>
+                                    Milestone submitted
+                                </strong>
+
+                                <small>
+                                    Department Onboarding
+                                </small>
+
+                                <span>
+                                    5 days ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NEXT ACTION -->
+
+                    <div class="pilot-next-action">
+
+                        <i class="bi bi-lightning-charge-fill"></i>
+
+                        <h4>
+                            Next Action
+                        </h4>
+
+                        <p>
+                            Complete the remaining User Testing
+                            activities and submit your milestone report.
+                        </p>
+
+                        <button
+                            class="btn btn-primary w-100"
+                            id="submitMilestone">
+
+                            Submit Milestone
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

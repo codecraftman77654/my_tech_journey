@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apply | Innovate360</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+            <i class="bi bi-lightbulb-fill"></i>
+            <span>Innovate360</span>
+        </div>
+
+        <div class="sidebar-section">
+
+            <small>MAIN</small>
+
+            <a href="dashboard.html" class="sidebar-link">
+                <i class="bi bi-grid-1x2-fill"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="problems.html" class="sidebar-link active">
+                <i class="bi bi-search"></i>
+                <span>Find Problems</span>
+            </a>
+
+            <a href="applications.html" class="sidebar-link">
+                <i class="bi bi-file-earmark-text-fill"></i>
+                <span>My Applications</span>
+                <span class="sidebar-badge">4</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-section">
+
+            <small>PROJECTS</small>
+
+            <a href="pilot.html" class="sidebar-link">
+                <i class="bi bi-rocket-takeoff-fill"></i>
+                <span>My Pilots</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-section">
+
+            <small>ACCOUNT</small>
+
+            <a href="profile.html" class="sidebar-link">
+                <i class="bi bi-person-circle"></i>
+                <span>Startup Profile</span>
+            </a>
+
+            <a href="../notifications.html" class="sidebar-link">
+                <i class="bi bi-bell"></i>
+                <span>Notifications</span>
+                <span class="sidebar-badge">3</span>
+            </a>
+
+            <a href="../index.html" class="sidebar-link">
+                <i class="bi bi-box-arrow-left"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-footer">
+
+            <div class="government-user">
+
+                <div class="user-avatar startup-user-avatar">
+                    TN
+                </div>
+
+                <div>
+                    <strong>TechNova Solutions</strong>
+                    <small>Startup Account</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="dashboard-main">
+
+        <!-- TOPBAR -->
+
+        <header class="dashboard-topbar">
+
+            <div class="breadcrumb-text">
+                Startup / Problems / Apply
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification-btn">
+
+                    <i class="bi bi-bell"></i>
+
+                    <span></span>
+
+                </button>
+
+                <div class="topbar-profile">
+
+                    <div class="user-avatar startup-user-avatar">
+                        TN
+                    </div>
+
+                    <div class="d-none d-md-block">
+
+                        <strong>
+                            TechNova Solutions
+                        </strong>
+
+                        <small>
+                            Startup Account
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <div class="dashboard-content">
+
+            <a
+                href="problem-detail.html"
+                class="back-link">
+
+                <i class="bi bi-arrow-left"></i>
+                Back to Problem
+
+            </a>
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="application-page-header">
+
+                <div>
+
+                    <span class="problem-id-large">
+                        SIH-26136
+                    </span>
+
+                    <h1>
+                        Apply for Problem
+                    </h1>
+
+                    <p>
+                        Startup Friendly Public Procurement
+                    </p>
+
+                </div>
+
+                <div class="application-step">
+
+                    <span>STEP</span>
+
+                    <strong>1 / 3</strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- FORM -->
+
+                <div class="col-lg-8">
+
+                    <form id="applicationForm">
+
+
+                        <!-- SOLUTION -->
+
+                        <div class="application-form-card">
+
+                            <div class="form-card-heading">
+
+                                <div class="form-heading-icon">
+                                    <i class="bi bi-lightbulb"></i>
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Your Solution
+                                    </h3>
+
+                                    <p>
+                                        Tell the government how your
+                                        startup will solve this problem.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Solution Title
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="solutionTitle"
+                                    placeholder="e.g. GovPilot - Smart Procurement Platform"
+                                    required>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Solution Description
+                                    <span>*</span>
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    id="solutionDescription"
+                                    rows="6"
+                                    placeholder="Describe your proposed solution, how it works and the problem it solves..."
+                                    required></textarea>
+
+                                <small class="character-count">
+                                    Minimum 100 characters
+                                </small>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Key Innovation
+                                    <span>*</span>
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    id="innovation"
+                                    rows="4"
+                                    placeholder="What makes your solution innovative?"
+                                    required></textarea>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- TECHNOLOGY -->
+
+                        <div class="application-form-card">
+
+                            <div class="form-card-heading">
+
+                                <div class="form-heading-icon">
+                                    <i class="bi bi-cpu"></i>
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Technology & Implementation
+                                    </h3>
+
+                                    <p>
+                                        Explain the technology behind
+                                        your solution.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Technology Stack
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="techStack"
+                                    placeholder="e.g. HTML, CSS, JavaScript, Flask, MySQL, AI"
+                                    required>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Implementation Approach
+                                    <span>*</span>
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    id="implementation"
+                                    rows="4"
+                                    placeholder="Explain how your solution will be developed and deployed..."
+                                    required></textarea>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- IMPACT -->
+
+                        <div class="application-form-card">
+
+                            <div class="form-card-heading">
+
+                                <div class="form-heading-icon">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Impact & Scalability
+                                    </h3>
+
+                                    <p>
+                                        Show the potential impact of
+                                        your solution.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Expected Impact
+                                    <span>*</span>
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    id="impact"
+                                    rows="4"
+                                    placeholder="How will your solution benefit government departments, startups and citizens?"
+                                    required></textarea>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Scalability Plan
+                                    <span>*</span>
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    id="scalability"
+                                    rows="4"
+                                    placeholder="How can the solution be scaled to other departments or states?"
+                                    required></textarea>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DOCUMENT -->
+
+                        <div class="application-form-card">
+
+                            <div class="form-card-heading">
+
+                                <div class="form-heading-icon">
+                                    <i class="bi bi-paperclip"></i>
+                                </div>
+
+                                <div>
+
+                                    <h3>
+                                        Supporting Documents
+                                    </h3>
+
+                                    <p>
+                                        Upload any documents that
+                                        support your application.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <label class="upload-box">
+
+                                <input
+                                    type="file"
+                                    id="solutionFile"
+                                    hidden>
+
+                                <i class="bi bi-cloud-arrow-up"></i>
+
+                                <strong>
+                                    Click to upload
+                                </strong>
+
+                                <span>
+                                    PDF, PPT, DOCX up to 10 MB
+                                </span>
+
+                            </label>
+
+                            <div
+                                id="fileName"
+                                class="selected-file">
+                            </div>
+
+                        </div>
+
+
+                        <!-- DECLARATION -->
+
+                        <div class="application-declaration">
+
+                            <label>
+
+                                <input
+                                    type="checkbox"
+                                    id="declaration"
+                                    required>
+
+                                <span>
+                                    I confirm that the information
+                                    provided in this application is
+                                    accurate and complete.
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- BUTTONS -->
+
+                        <div class="application-actions">
+
+                            <a
+                                href="problem-detail.html"
+                                class="btn btn-outline-secondary">
+
+                                Cancel
+
+                            </a>
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary">
+
+                                Submit Application
+
+                                <i class="bi bi-arrow-right"></i>
+
+                            </button>
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+
+                <div class="col-lg-4">
+
+
+                    <!-- PROBLEM SUMMARY -->
+
+                    <div class="application-summary-card">
+
+                        <span>
+                            APPLYING FOR
+                        </span>
+
+                        <h3>
+                            Startup Friendly
+                            Public Procurement
+                        </h3>
+
+                        <p>
+                            SIH-26136
+                        </p>
+
+                        <div class="summary-line"></div>
+
+                        <div class="summary-item">
+
+                            <i class="bi bi-bank"></i>
+
+                            <div>
+                                <small>Organization</small>
+                                <strong>
+                                    Govt. of Maharashtra
+                                </strong>
+                            </div>
+
+                        </div>
+
+                        <div class="summary-item">
+
+                            <i class="bi bi-tag"></i>
+
+                            <div>
+                                <small>Theme</small>
+                                <strong>
+                                    Smart Automation
+                                </strong>
+                            </div>
+
+                        </div>
+
+                        <div class="summary-item">
+
+                            <i class="bi bi-calendar"></i>
+
+                            <div>
+                                <small>Deadline</small>
+                                <strong>
+                                    30 Sep 2026
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- APPLICATION TIPS -->
+
+                    <div class="application-tips-card">
+
+                        <h4>
+                            <i class="bi bi-info-circle"></i>
+                            Application Tips
+                        </h4>
+
+                        <ul>
+
+                            <li>
+                                Clearly explain the problem your
+                                solution addresses.
+                            </li>
+
+                            <li>
+                                Highlight what makes your approach
+                                different.
+                            </li>
+
+                            <li>
+                                Mention measurable outcomes.
+                            </li>
+
+                            <li>
+                                Explain how the solution can scale.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- PROGRESS -->
+
+                    <div class="application-progress-card">
+
+                        <div class="progress-heading">
+
+                            <strong>
+                                Application Progress
+                            </strong>
+
+                            <span id="progressPercent">
+                                0%
+                            </span>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div
+                                class="progress-bar"
+                                id="applicationProgress"
+                                style="width: 0%">
+                            </div>
+
+                        </div>
+
+                        <small>
+                            Complete all required fields to submit.
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

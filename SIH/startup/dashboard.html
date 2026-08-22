@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Startup Dashboard | Innovate360</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-brand">
+            <i class="bi bi-lightbulb-fill"></i>
+            <span>Innovate360</span>
+        </div>
+
+        <div class="sidebar-section">
+
+            <small>MAIN</small>
+
+            <a href="dashboard.html" class="sidebar-link active">
+                <i class="bi bi-grid-1x2-fill"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="problems.html" class="sidebar-link">
+                <i class="bi bi-search"></i>
+                <span>Find Problems</span>
+            </a>
+
+            <a href="applications.html" class="sidebar-link">
+                <i class="bi bi-file-earmark-text-fill"></i>
+                <span>My Applications</span>
+                <span class="sidebar-badge">4</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-section">
+
+            <small>PROJECTS</small>
+
+            <a href="pilot.html" class="sidebar-link">
+                <i class="bi bi-rocket-takeoff-fill"></i>
+                <span>My Pilots</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-section">
+
+            <small>ACCOUNT</small>
+
+            <a href="profile.html" class="sidebar-link">
+                <i class="bi bi-person-circle"></i>
+                <span>Startup Profile</span>
+            </a>
+
+            <a href="../notifications.html" class="sidebar-link">
+                <i class="bi bi-bell"></i>
+                <span>Notifications</span>
+                <span class="sidebar-badge">3</span>
+            </a>
+
+          <a
+    href="../index.html"
+    class="sidebar-link"
+    onclick="localStorage.clear();">
+
+    <i class="bi bi-box-arrow-left"></i>
+
+    <span>Logout</span>
+
+</a>
+
+        </div>
+
+        <div class="sidebar-footer">
+
+            <div class="government-user">
+
+                <div class="user-avatar startup-user-avatar">
+                    TN
+                </div>
+
+                <div>
+                    <strong>TechNova Solutions</strong>
+                    <small>Startup Account</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="dashboard-main">
+
+        <!-- TOPBAR -->
+
+        <header class="dashboard-topbar">
+
+            <div>
+
+                <button
+                    class="mobile-menu-btn"
+                    id="sidebarToggle">
+
+                    <i class="bi bi-list"></i>
+
+                </button>
+
+                <span class="breadcrumb-text">
+                    Startup / Dashboard
+                </span>
+
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification-btn">
+
+                    <i class="bi bi-bell"></i>
+
+                    <span></span>
+
+                </button>
+
+                <div class="topbar-profile">
+
+                    <div class="user-avatar startup-user-avatar">
+                        TN
+                    </div>
+
+                    <div class="d-none d-md-block">
+
+                        <strong>
+                            TechNova Solutions
+                        </strong>
+
+                        <small>
+                            Startup Account
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <div class="dashboard-content">
+
+
+            <!-- WELCOME -->
+
+            <div class="startup-welcome">
+
+                <div>
+
+                    <p class="text-primary fw-semibold mb-1">
+                        STARTUP PORTAL
+                    </p>
+
+                    <h1>
+                        Welcome back, TechNova 👋
+                    </h1>
+
+                    <p>
+                        Discover government challenges and turn your
+                        innovative ideas into real-world solutions.
+                    </p>
+
+                </div>
+
+                <a
+                    href="problems.html"
+                    class="btn btn-primary">
+
+                    <i class="bi bi-search"></i>
+
+                    Explore Problems
+
+                </a>
+
+            </div>
+
+
+            <!-- ================= STATS ================= -->
+
+            <div class="row g-3 mb-4">
+
+                <div class="col-sm-6 col-xl-3">
+
+                    <div class="startup-stat-card">
+
+                        <div class="startup-stat-icon blue">
+
+                            <i class="bi bi-search"></i>
+
+                        </div>
+
+                        <span>
+                            Available Problems
+                        </span>
+
+                        <strong>
+                            28
+                        </strong>
+
+                        <small>
+                            6 new this week
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-sm-6 col-xl-3">
+
+                    <div class="startup-stat-card">
+
+                        <div class="startup-stat-icon purple">
+
+                            <i class="bi bi-file-earmark-text"></i>
+
+                        </div>
+
+                        <span>
+                            Applications
+                        </span>
+
+                        <strong>
+                            4
+                        </strong>
+
+                        <small>
+                            2 under evaluation
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-sm-6 col-xl-3">
+
+                    <div class="startup-stat-card">
+
+                        <div class="startup-stat-icon green">
+
+                            <i class="bi bi-check-circle"></i>
+
+                        </div>
+
+                        <span>
+                            Shortlisted
+                        </span>
+
+                        <strong>
+                            1
+                        </strong>
+
+                        <small>
+                            Ready for next stage
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-sm-6 col-xl-3">
+
+                    <div class="startup-stat-card">
+
+                        <div class="startup-stat-icon orange">
+
+                            <i class="bi bi-rocket-takeoff"></i>
+
+                        </div>
+
+                        <span>
+                            Active Pilots
+                        </span>
+
+                        <strong>
+                            1
+                        </strong>
+
+                        <small>
+                            Pilot in progress
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= MAIN GRID ================= -->
+
+            <div class="row g-4">
+
+
+                <!-- LEFT -->
+
+                <div class="col-lg-8">
+
+
+                    <!-- RECOMMENDED PROBLEMS -->
+
+                    <div class="dashboard-card mb-4">
+
+                        <div class="card-header-custom">
+
+                            <div>
+
+                                <h5>
+                                    Recommended Problems
+                                </h5>
+
+                                <p>
+                                    Challenges that match your startup
+                                    profile and capabilities.
+                                </p>
+
+                            </div>
+
+                            <a
+                                href="problems.html"
+                                class="view-all-link">
+
+                                View All
+
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="recommended-problem-list">
+
+
+                            <!-- PROBLEM 1 -->
+
+                            <div class="recommended-problem">
+
+                                <div class="recommended-icon blue">
+
+                                    <i class="bi bi-building"></i>
+
+                                </div>
+
+                                <div class="recommended-content">
+
+                                    <div class="recommended-title">
+
+                                        <strong>
+                                            Startup Friendly Public
+                                            Procurement
+                                        </strong>
+
+                                        <span class="match-badge">
+                                            94% Match
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Build a transparent digital mechanism
+                                        for government startup procurement.
+                                    </p>
+
+                                    <div class="recommended-meta">
+
+                                        <span>
+                                            <i class="bi bi-bank"></i>
+                                            Govt. of Maharashtra
+                                        </span>
+
+                                        <span>
+                                            <i class="bi bi-calendar"></i>
+                                            30 Sep 2026
+                                        </span>
+
+                                        <span>
+                                            <i class="bi bi-people"></i>
+                                            24 applications
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                                <a
+                                    href="problem-detail.html"
+                                    class="recommended-action">
+
+                                    View
+
+                                    <i class="bi bi-chevron-right"></i>
+
+                                </a>
+
+                            </div>
+
+
+                            <!-- PROBLEM 2 -->
+
+                            <div class="recommended-problem">
+
+                                <div class="recommended-icon purple">
+
+                                    <i class="bi bi-cpu"></i>
+
+                                </div>
+
+                                <div class="recommended-content">
+
+                                    <div class="recommended-title">
+
+                                        <strong>
+                                            AI-Based Citizen Service
+                                            Assistant
+                                        </strong>
+
+                                        <span class="match-badge">
+                                            88% Match
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Develop an AI assistant to improve
+                                        citizen access to government services.
+                                    </p>
+
+                                    <div class="recommended-meta">
+
+                                        <span>
+                                            <i class="bi bi-bank"></i>
+                                            Govt. of Karnataka
+                                        </span>
+
+                                        <span>
+                                            <i class="bi bi-calendar"></i>
+                                            05 Oct 2026
+                                        </span>
+
+                                        <span>
+                                            <i class="bi bi-people"></i>
+                                            17 applications
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                                <a
+                                    href="problem-detail.html"
+                                    class="recommended-action">
+
+                                    View
+
+                                    <i class="bi bi-chevron-right"></i>
+
+                                </a>
+
+                            </div>
+
+
+                            <!-- PROBLEM 3 -->
+
+                            <div class="recommended-problem">
+
+                                <div class="recommended-icon green">
+
+                                    <i class="bi bi-graph-up-arrow"></i>
+
+                                </div>
+
+                                <div class="recommended-content">
+
+                                    <div class="recommended-title">
+
+                                        <strong>
+                                            Smart Infrastructure Monitoring
+                                        </strong>
+
+                                        <span class="match-badge">
+                                            81% Match
+                                        </span>
+
+                                    </div>
+
+                                    <p>
+                                        Use technology to monitor public
+                                        infrastructure and detect issues.
+                                    </p>
+
+                                    <div class="recommended-meta">
+
+                                        <span>
+                                            <i class="bi bi-bank"></i>
+                                            Govt. of Telangana
+                                        </span>
+
+                                        <span>
+                                            <i class="bi bi-calendar"></i>
+                                            12 Oct 2026
+                                        </span>
+
+                                        <span>
+                                            <i class="bi bi-people"></i>
+                                            9 applications
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                                <a
+                                    href="problem-detail.html"
+                                    class="recommended-action">
+
+                                    View
+
+                                    <i class="bi bi-chevron-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RECENT APPLICATIONS -->
+
+                    <div class="dashboard-card">
+
+                        <div class="card-header-custom">
+
+                            <div>
+
+                                <h5>
+                                    Recent Applications
+                                </h5>
+
+                                <p>
+                                    Track your submitted solutions.
+                                </p>
+
+                            </div>
+
+                            <a
+                                href="applications.html"
+                                class="view-all-link">
+
+                                View All
+
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="startup-application-list">
+
+
+                            <!-- APPLICATION 1 -->
+
+                            <div class="startup-application">
+
+                                <div class="application-status-icon evaluation">
+
+                                    <i class="bi bi-hourglass-split"></i>
+
+                                </div>
+
+                                <div class="startup-application-main">
+
+                                    <strong>
+                                        Startup Friendly Public Procurement
+                                    </strong>
+
+                                    <small>
+                                        SIH-26136 · Submitted 23 Aug 2026
+                                    </small>
+
+                                </div>
+
+                                <span class="application-status evaluation">
+                                    Under Evaluation
+                                </span>
+
+                                <a
+                                    href="applications.html"
+                                    class="small-action">
+
+                                    View
+
+                                </a>
+
+                            </div>
+
+
+                            <!-- APPLICATION 2 -->
+
+                            <div class="startup-application">
+
+                                <div class="application-status-icon shortlisted">
+
+                                    <i class="bi bi-check-circle"></i>
+
+                                </div>
+
+                                <div class="startup-application-main">
+
+                                    <strong>
+                                        Smart Automation System
+                                    </strong>
+
+                                    <small>
+                                        SIH-26138 · Submitted 19 Aug 2026
+                                    </small>
+
+                                </div>
+
+                                <span class="application-status shortlisted">
+                                    Shortlisted
+                                </span>
+
+                                <a
+                                    href="applications.html"
+                                    class="small-action">
+
+                                    View
+
+                                </a>
+
+                            </div>
+
+
+                            <!-- APPLICATION 3 -->
+
+                            <div class="startup-application">
+
+                                <div class="application-status-icon new">
+
+                                    <i class="bi bi-send"></i>
+
+                                </div>
+
+                                <div class="startup-application-main">
+
+                                    <strong>
+                                        Digital Governance Platform
+                                    </strong>
+
+                                    <small>
+                                        SIH-26142 · Submitted 17 Aug 2026
+                                    </small>
+
+                                </div>
+
+                                <span class="application-status new">
+                                    Submitted
+                                </span>
+
+                                <a
+                                    href="applications.html"
+                                    class="small-action">
+
+                                    View
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT -->
+
+                <div class="col-lg-4">
+
+
+                    <!-- ACTIVE PILOT -->
+
+                    <div class="dashboard-card mb-4">
+
+                        <div class="card-header-custom">
+
+                            <div>
+
+                                <h5>
+                                    Active Pilot
+                                </h5>
+
+                                <p>
+                                    Your current government project.
+                                </p>
+
+                            </div>
+
+                            <span class="pilot-status">
+                                Active
+                            </span>
+
+                        </div>
+
+
+                        <div class="startup-pilot-card">
+
+                            <div class="startup-pilot-icon">
+
+                                <i class="bi bi-rocket-takeoff"></i>
+
+                            </div>
+
+                            <h5>
+                                GovPilot
+                            </h5>
+
+                            <p>
+                                Startup Friendly Public Procurement
+                            </p>
+
+                            <div class="startup-pilot-progress">
+
+                                <div class="d-flex justify-content-between">
+
+                                    <small>
+                                        Progress
+                                    </small>
+
+                                    <strong>
+                                        68%
+                                    </strong>
+
+                                </div>
+
+                                <div class="pilot-progress-bar">
+
+                                    <div style="width:68%"></div>
+
+                                </div>
+
+                            </div>
+
+                            <a
+                                href="pilot.html"
+                                class="btn btn-outline-primary w-100 mt-3">
+
+                                View Pilot
+
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NOTIFICATIONS -->
+
+                    <div class="dashboard-card mb-4">
+
+                        <div class="card-header-custom">
+
+                            <h5>
+                                Recent Notifications
+                            </h5>
+
+                            <a
+                                href="../notifications.html"
+                                class="view-all-link">
+
+                                View All
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="startup-notification">
+
+                            <div class="notification-icon green">
+
+                                <i class="bi bi-check-circle"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Application shortlisted
+                                </strong>
+
+                                <small>
+                                    Smart Automation System
+                                </small>
+
+                                <span>
+                                    2 hours ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="startup-notification">
+
+                            <div class="notification-icon blue">
+
+                                <i class="bi bi-file-earmark-text"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Application received
+                                </strong>
+
+                                <small>
+                                    SIH-26136
+                                </small>
+
+                                <span>
+                                    Yesterday
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="startup-notification">
+
+                            <div class="notification-icon orange">
+
+                                <i class="bi bi-calendar-event"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Pilot milestone due
+                                </strong>
+
+                                <small>
+                                    User Testing
+                                </small>
+
+                                <span>
+                                    2 days ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROFILE COMPLETION -->
+
+                    <div class="dashboard-card">
+
+                        <div class="card-header-custom">
+
+                            <h5>
+                                Profile Completion
+                            </h5>
+
+                            <strong class="profile-percent">
+                                85%
+                            </strong>
+
+                        </div>
+
+                        <div class="profile-completion-bar">
+
+                            <div style="width:85%"></div>
+
+                        </div>
+
+                        <p class="profile-help">
+                            Complete your profile to improve your
+                            problem recommendations.
+                        </p>
+
+                        <a
+                            href="profile.html"
+                            class="btn btn-outline-secondary btn-sm">
+
+                            Complete Profile
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

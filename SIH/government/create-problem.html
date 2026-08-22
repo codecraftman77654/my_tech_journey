@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Problem | Innovate360</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-brand">
+            <i class="bi bi-lightbulb-fill"></i>
+            <span>Innovate360</span>
+        </div>
+
+        <div class="sidebar-section">
+
+            <small>MAIN</small>
+
+            <a href="dashboard.html" class="sidebar-link">
+                <i class="bi bi-grid-1x2-fill"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="problems.html" class="sidebar-link active">
+                <i class="bi bi-kanban-fill"></i>
+                <span>My Problems</span>
+            </a>
+
+            <a href="applications.html" class="sidebar-link">
+                <i class="bi bi-file-earmark-text-fill"></i>
+                <span>Applications</span>
+                <span class="sidebar-badge">12</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-section">
+
+            <small>PROJECTS</small>
+
+            <a href="evaluation.html" class="sidebar-link">
+                <i class="bi bi-clipboard-check-fill"></i>
+                <span>Evaluations</span>
+            </a>
+
+            <a href="pilot.html" class="sidebar-link">
+                <i class="bi bi-rocket-takeoff-fill"></i>
+                <span>Pilots</span>
+            </a>
+
+            <a href="procurement.html" class="sidebar-link">
+                <i class="bi bi-cart-check-fill"></i>
+                <span>Procurement</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-section">
+
+            <small>ACCOUNT</small>
+
+            <a href="../profile.html" class="sidebar-link">
+                <i class="bi bi-person-circle"></i>
+                <span>Profile</span>
+            </a>
+
+            <a href="../index.html" class="sidebar-link">
+                <i class="bi bi-box-arrow-left"></i>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+        <div class="sidebar-footer">
+
+            <div class="government-user">
+
+                <div class="user-avatar">
+                    GD
+                </div>
+
+                <div>
+                    <strong>Government Dept.</strong>
+                    <small>Department Admin</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="dashboard-main">
+
+        <!-- TOPBAR -->
+
+        <header class="dashboard-topbar">
+
+            <div>
+
+                <button
+                    class="mobile-menu-btn"
+                    id="sidebarToggle">
+
+                    <i class="bi bi-list"></i>
+
+                </button>
+
+                <span class="breadcrumb-text">
+                    Government / Problems / Create
+                </span>
+
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification-btn">
+                    <i class="bi bi-bell"></i>
+                    <span></span>
+                </button>
+
+                <div class="topbar-profile">
+
+                    <div class="user-avatar">
+                        GD
+                    </div>
+
+                    <div class="d-none d-md-block">
+
+                        <strong>Government Dept.</strong>
+
+                        <small>
+                            Department Admin
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <div class="dashboard-content">
+
+            <!-- PAGE HEADER -->
+
+            <div class="dashboard-heading">
+
+                <div>
+
+                    <p class="text-primary fw-semibold mb-1">
+                        CHALLENGE MANAGEMENT
+                    </p>
+
+                    <h1>
+                        Create New Problem
+                    </h1>
+
+                    <p class="text-secondary">
+                        Define a government challenge for startups
+                        and innovators to solve.
+                    </p>
+
+                </div>
+
+                <a
+                    href="problems.html"
+                    class="btn btn-outline-secondary">
+
+                    <i class="bi bi-arrow-left"></i>
+
+                    Back to Problems
+
+                </a>
+
+            </div>
+
+
+            <!-- ================= FORM ================= -->
+
+            <form id="problemForm">
+
+                <div class="row g-4">
+
+                    <!-- LEFT COLUMN -->
+
+                    <div class="col-lg-8">
+
+
+                        <!-- BASIC INFORMATION -->
+
+                        <div class="dashboard-card mb-4">
+
+                            <div class="form-section-header">
+
+                                <div class="form-section-icon">
+                                    <i class="bi bi-file-text"></i>
+                                </div>
+
+                                <div>
+
+                                    <h5>
+                                        Basic Information
+                                    </h5>
+
+                                    <p>
+                                        Provide the core details of the challenge.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Problem Title
+                                    <span class="required">*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control form-control-lg"
+                                    id="problemTitle"
+                                    placeholder="Enter a clear and concise problem title"
+                                    required>
+
+                                <div class="form-help">
+                                    Use a title that clearly describes the challenge.
+                                </div>
+
+                            </div>
+
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Problem Description
+                                    <span class="required">*</span>
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    id="problemDescription"
+                                    rows="6"
+                                    placeholder="Describe the problem, its background and why it needs to be solved..."
+                                    required></textarea>
+
+                                <div class="form-help">
+                                    Explain the current situation and the key challenge.
+                                </div>
+
+                            </div>
+
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Expected Solution
+                                    <span class="required">*</span>
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    id="expectedSolution"
+                                    rows="5"
+                                    placeholder="Describe what kind of solution or outcome is expected..."
+                                    required></textarea>
+
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+                                        Theme
+                                        <span class="required">*</span>
+                                    </label>
+
+                                    <select
+                                        class="form-select"
+                                        required>
+
+                                        <option value="">
+                                            Select a theme
+                                        </option>
+
+                                        <option>
+                                            Smart Automation
+                                        </option>
+
+                                        <option>
+                                            Smart Cities
+                                        </option>
+
+                                        <option>
+                                            Healthcare
+                                        </option>
+
+                                        <option>
+                                            Agriculture
+                                        </option>
+
+                                        <option>
+                                            Education
+                                        </option>
+
+                                        <option>
+                                            Cybersecurity
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+                                        Technology Domain
+                                    </label>
+
+                                    <select class="form-select">
+
+                                        <option value="">
+                                            Select technology
+                                        </option>
+
+                                        <option>
+                                            Artificial Intelligence
+                                        </option>
+
+                                        <option>
+                                            Web & Mobile
+                                        </option>
+
+                                        <option>
+                                            Data Analytics
+                                        </option>
+
+                                        <option>
+                                            IoT
+                                        </option>
+
+                                        <option>
+                                            Blockchain
+                                        </option>
+
+                                        <option>
+                                            Cloud Computing
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- REQUIREMENTS -->
+
+                        <div class="dashboard-card mb-4">
+
+                            <div class="form-section-header">
+
+                                <div class="form-section-icon">
+                                    <i class="bi bi-list-check"></i>
+                                </div>
+
+                                <div>
+
+                                    <h5>
+                                        Requirements & Evaluation
+                                    </h5>
+
+                                    <p>
+                                        Define what startups should consider.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Key Requirements
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="List important requirements, constraints or capabilities..."></textarea>
+
+                            </div>
+
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Evaluation Criteria
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="Example: Innovation, technical feasibility, scalability, cost effectiveness..."></textarea>
+
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+                                        Expected Budget
+                                    </label>
+
+                                    <div class="input-group">
+
+                                        <span class="input-group-text">
+                                            ₹
+                                        </span>
+
+                                        <input
+                                            type="number"
+                                            class="form-control"
+                                            placeholder="Estimated budget">
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+                                        Project Duration
+                                    </label>
+
+                                    <select class="form-select">
+
+                                        <option>
+                                            1–3 Months
+                                        </option>
+
+                                        <option>
+                                            3–6 Months
+                                        </option>
+
+                                        <option>
+                                            6–12 Months
+                                        </option>
+
+                                        <option>
+                                            12+ Months
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DOCUMENTS -->
+
+                        <div class="dashboard-card">
+
+                            <div class="form-section-header">
+
+                                <div class="form-section-icon">
+                                    <i class="bi bi-paperclip"></i>
+                                </div>
+
+                                <div>
+
+                                    <h5>
+                                        Supporting Documents
+                                    </h5>
+
+                                    <p>
+                                        Add documents that help startups understand the challenge.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="upload-box">
+
+                                <i class="bi bi-cloud-arrow-up"></i>
+
+                                <h6>
+                                    Upload supporting files
+                                </h6>
+
+                                <p>
+                                    PDF, DOCX, XLSX up to 10 MB
+                                </p>
+
+                                <label
+                                    for="problemFile"
+                                    class="btn btn-outline-primary">
+
+                                    Choose File
+
+                                </label>
+
+                                <input
+                                    type="file"
+                                    id="problemFile"
+                                    hidden>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT COLUMN -->
+
+                    <div class="col-lg-4">
+
+
+                        <!-- PUBLISH SETTINGS -->
+
+                        <div class="dashboard-card mb-4">
+
+                            <div class="form-section-header">
+
+                                <div class="form-section-icon">
+                                    <i class="bi bi-gear"></i>
+                                </div>
+
+                                <div>
+
+                                    <h5>
+                                        Publishing Settings
+                                    </h5>
+
+                                    <p>
+                                        Configure visibility and deadlines.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Submission Deadline
+                                </label>
+
+                                <input
+                                    type="date"
+                                    class="form-control">
+
+                            </div>
+
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Visibility
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option>
+                                        Public — All eligible startups
+                                    </option>
+
+                                    <option>
+                                        Restricted — Selected startups
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-check form-switch mb-3">
+
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    checked>
+
+                                <label class="form-check-label">
+
+                                    Accept startup applications
+
+                                </label>
+
+                            </div>
+
+
+                            <div class="form-check form-switch">
+
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox">
+
+                                <label class="form-check-label">
+
+                                    Require expert evaluation
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PREVIEW -->
+
+                        <div class="dashboard-card mb-4">
+
+                            <div class="card-header-custom">
+
+                                <div>
+
+                                    <h5>
+                                        Publishing Checklist
+                                    </h5>
+
+                                    <p>
+                                        Make sure everything is ready.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="checklist-item">
+
+                                <i class="bi bi-check-circle-fill text-success"></i>
+
+                                Problem title
+
+                            </div>
+
+
+                            <div class="checklist-item">
+
+                                <i class="bi bi-check-circle-fill text-success"></i>
+
+                                Problem description
+
+                            </div>
+
+
+                            <div class="checklist-item">
+
+                                <i class="bi bi-circle text-secondary"></i>
+
+                                Evaluation criteria
+
+                            </div>
+
+
+                            <div class="checklist-item">
+
+                                <i class="bi bi-circle text-secondary"></i>
+
+                                Supporting document
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ACTIONS -->
+
+                        <div class="dashboard-card">
+
+                            <button
+                                type="button"
+                                class="btn btn-outline-secondary w-100 mb-2"
+                                id="saveDraft">
+
+                                <i class="bi bi-file-earmark"></i>
+
+                                Save as Draft
+
+                            </button>
+
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary w-100">
+
+                                <i class="bi bi-send"></i>
+
+                                Publish Problem
+
+                            </button>
+
+                            <p class="form-help text-center mt-3 mb-0">
+                                You can edit the problem after saving it as a draft.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- Bootstrap -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
