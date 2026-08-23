@@ -12,6 +12,11 @@ const resultCount =
 
 const noResults =
     document.getElementById("noResults");
+    const urlParams =
+    new URLSearchParams(window.location.search);
+
+const selectedState =
+    urlParams.get("state");
 
 
 let currentCategory = "all";
@@ -123,10 +128,15 @@ function filterHeritage() {
             const matchesCategory =
                 currentCategory === "all" ||
                 item.category === currentCategory;
+                const matchesState =
+    !selectedState ||
+    item.state.toLowerCase() ===
+    selectedState.toLowerCase();
 
 
-            return matchesSearch &&
-                   matchesCategory;
+          return matchesSearch &&
+       matchesCategory &&
+       matchesState;
 
         });
 
@@ -170,4 +180,141 @@ filterButtons.forEach(function (button) {
 });
 
 
-displayHeritage(heritageData);
+// displayHeritage(heritageData);
+filterHeritage();
+
+
+
+/* =========================
+   CULTURE KEEPERS
+========================= */
+
+const leaderboardList =
+    document.getElementById("leaderboardList");
+
+const yourRank =
+    document.getElementById("yourRank");
+
+
+if (leaderboardList) {
+
+    const currentCredits =
+        Number(
+            localStorage.getItem("cultureCredits")
+        ) || 0;
+
+
+    const students = [
+
+        {
+            name: "Ananya",
+            credits: 420,
+            avatar: "👩"
+        },
+
+        {
+            name: "Rahul",
+            credits: 360,
+            avatar: "👨"
+        },
+
+        {
+            name: "Priya",
+            credits: 310,
+            avatar: "👩"
+        },
+
+        {
+            name: "You",
+            credits: currentCredits,
+            avatar: "🧑"
+        },
+
+        {
+            name: "Arjun",
+            credits: 180,
+            avatar: "👨"
+        }
+
+    ];
+
+
+    students.sort(function (a, b) {
+
+        return b.credits - a.credits;
+
+    });
+
+
+    students.forEach(function (student, index) {
+
+        const row =
+            document.createElement("div");
+
+        row.className =
+            "leaderboard-row";
+
+
+        let rankDisplay =
+            index + 1;
+
+
+        if (index === 0) {
+            rankDisplay = "🥇";
+        }
+
+        else if (index === 1) {
+            rankDisplay = "🥈";
+        }
+
+        else if (index === 2) {
+            rankDisplay = "🥉";
+        }
+
+
+        row.innerHTML = `
+
+            <div class="rank">
+                ${rankDisplay}
+            </div>
+
+            <div class="contributor">
+
+                <div class="contributor-avatar">
+                    ${student.avatar}
+                </div>
+
+                <div>
+
+                    <span class="contributor-name">
+                        ${student.name}
+                    </span>
+
+                    <span class="contributor-label">
+                        Culture Keeper
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="leaderboard-credits">
+                🏆 ${student.credits}
+            </div>
+
+        `;
+
+
+        leaderboardList.appendChild(row);
+
+
+        if (student.name === "You") {
+
+            yourRank.textContent =
+                `🏆 Your current rank: #${index + 1}`;
+
+        }
+
+    });
+
+}

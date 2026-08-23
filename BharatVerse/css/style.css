@@ -2583,3 +2583,296 @@ body {
     font-size: 12px;
     font-weight: 700;
 }
+
+
+/* =========================
+   CULTURE KEEPERS
+========================= */
+
+.leaderboard-section {
+    padding: 90px 8% 110px;
+
+    background: #fffaf2;
+}
+
+
+.leaderboard-heading {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.leaderboard-heading h2 {
+    font-size: 42px;
+
+    margin: 12px 0;
+}
+
+
+.leaderboard-heading h2 span {
+    color: #d97706;
+}
+
+
+.leaderboard-heading p {
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* Leaderboard card */
+
+.leaderboard-card {
+    max-width: 800px;
+
+    margin: auto;
+
+    background: white;
+
+    border: 1px solid #eee;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+
+.leaderboard-header {
+    display: grid;
+
+    grid-template-columns: 80px 1fr 120px;
+
+    padding: 16px 25px;
+
+    background: #292524;
+
+    color: #bbb;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    font-weight: 700;
+}
+
+
+.leaderboard-row {
+    display: grid;
+
+    grid-template-columns: 80px 1fr 120px;
+
+    align-items: center;
+
+    padding: 18px 25px;
+
+    border-bottom: 1px solid #eee;
+
+    transition: 0.2s;
+}
+
+
+.leaderboard-row:hover {
+    background: #fffaf2;
+}
+
+
+.rank {
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+
+.contributor {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.contributor-avatar {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff3df;
+
+    font-size: 18px;
+}
+
+
+.contributor-name {
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.contributor-label {
+    display: block;
+
+    color: #999;
+
+    font-size: 10px;
+
+    margin-top: 3px;
+}
+
+
+.leaderboard-credits {
+    color: #b45309;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* Current user */
+
+.your-rank {
+    padding: 18px 25px;
+
+    background: #fff3df;
+
+    color: #92400e;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+
+/* =========================
+   FINAL HOMEPAGE POLISH
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* Navbar polish */
+
+.navbar {
+    box-sizing: border-box;
+}
+
+.nav-links a {
+    position: relative;
+    transition: color 0.25s ease;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    background: #d97706;
+
+    transition: width 0.25s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+
+/* Buttons */
+
+.primary-btn,
+.secondary-btn,
+.nav-btn {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.primary-btn:hover,
+.nav-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(217, 119, 6, 0.18);
+}
+
+.secondary-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Cards */
+
+.heritage-card,
+.state-card,
+.explore-card,
+.contribution-card {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.heritage-card:hover,
+.state-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Section headings */
+
+.section-heading h2,
+.contribute-content h2 {
+    letter-spacing: -1px;
+}
+
+
+/* Better focus accessibility */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid rgba(217, 119, 6, 0.25);
+
+    outline-offset: 3px;
+}
+
+
+/* Prevent images/content from overflowing */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
