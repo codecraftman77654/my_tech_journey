@@ -6,6 +6,7 @@ const heritageData = [
         state: "Bihar",
         category: "art",
         icon: "🎨",
+        // image: "assets/images/madhubaniArt.jpg",
         description:
             "A traditional folk art form known for intricate patterns, vibrant colors and stories inspired by nature and mythology."
     },
