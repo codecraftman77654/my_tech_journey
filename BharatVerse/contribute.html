@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contribute | BharatVerse</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <span class="logo-icon">🇮🇳</span>
+                <span>Bharat<span class="logo-highlight">Verse</span></span>
+            </div>
+
+            <div class="credit-display">
+    🏆 <span id="creditCount">0</span>
+</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="heritage.html">Heritage</a>
+                <a href="contribute.html" class="active">Contribute</a>
+                <a href="quiz.html">Quiz</a>
+            </div>
+
+            <a href="explore.html" class="nav-btn">
+                Explore
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Contribution Hero -->
+
+        <section class="contribute-hero">
+
+            <span class="section-tag">
+                BECOME A CULTURE KEEPER
+            </span>
+
+            <h1>
+                Your Culture.
+                <span>Your Story.</span>
+            </h1>
+
+            <p>
+                Help preserve India's living heritage by sharing
+                a tradition, story, art form, festival or local
+                knowledge from your community.
+            </p>
+
+        </section>
+
+
+        <!-- Contribution Form -->
+
+        <section class="contribution-form-section">
+
+            <div class="form-intro">
+
+                <span class="section-tag">
+                    MAKE A CONTRIBUTION
+                </span>
+
+                <h2>
+                    Share something
+                    <span>worth remembering.</span>
+                </h2>
+
+                <p>
+                    Every contribution helps create a richer
+                    digital record of India's diverse cultural
+                    heritage.
+                </p>
+
+                <div class="form-benefits">
+
+                    <div>
+                        <span>🌱</span>
+                        <strong>Preserve</strong>
+                        <p>Document local traditions.</p>
+                    </div>
+
+                    <div>
+                        <span>🏆</span>
+                        <strong>Earn Credits</strong>
+                        <p>Get recognized for contributions.</p>
+                    </div>
+
+                    <div>
+                        <span>🇮🇳</span>
+                        <strong>Represent</strong>
+                        <p>Share your community with India.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="contribution-form-card">
+
+                <form id="contributionForm">
+
+                    <div class="form-group">
+
+                        <label for="contributorName">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contributorName"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="state">
+                                State
+                            </label>
+
+                            <select id="state" required>
+
+                                <option value="">
+                                    Select state
+                                </option>
+
+                                <option>Bihar</option>
+                                <option>Rajasthan</option>
+                                <option>Kerala</option>
+                                <option>Assam</option>
+                                <option>Maharashtra</option>
+                                <option>Tamil Nadu</option>
+                                <option>Uttar Pradesh</option>
+                                <option>West Bengal</option>
+                                <option>Odisha</option>
+                                <option>Other</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="category">
+                                Category
+                            </label>
+
+                            <select id="category" required>
+
+                                <option value="">
+                                    Select category
+                                </option>
+
+                                <option value="art">
+                                    Art
+                                </option>
+
+                                <option value="dance">
+                                    Dance
+                                </option>
+
+                                <option value="festival">
+                                    Festival
+                                </option>
+
+                                <option value="craft">
+                                    Craft
+                                </option>
+
+                                <option value="food">
+                                    Food
+                                </option>
+
+                                <option value="story">
+                                    Story / Tradition
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="title">
+                            Heritage / Tradition Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="title"
+                            placeholder="e.g. Chhath Puja"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="story">
+                            Tell Us About It
+                        </label>
+
+                        <textarea
+                            id="story"
+                            rows="6"
+                            placeholder="Share its history, significance, how it is celebrated, or anything your community knows about it..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="image">
+                            Add a Photo
+                            <span class="optional">
+                                Optional
+                            </span>
+                        </label>
+
+                        <div class="upload-box">
+
+                            <span>📸</span>
+
+                            <p>
+                                Click to upload or drag an image here
+                            </p>
+
+                            <small>
+                                JPG, PNG • Max 5MB
+                            </small>
+
+                            <input
+                                type="file"
+                                id="image"
+                                accept="image/*"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="submit-contribution-btn"
+                    >
+                        Submit Contribution →
+                    </button>
+
+                </form>
+
+
+                <!-- Success Message -->
+
+                <div
+                    class="contribution-success"
+                    id="contributionSuccess"
+                >
+
+                    <div class="success-icon">
+                        ✓
+                    </div>
+
+                    <h2>
+                        Contribution Received!
+                    </h2>
+
+                    <p id="successMessage">
+                        Thank you for helping preserve India's
+                        cultural heritage.
+                    </p>
+
+                    <div class="earned-credits">
+                        🏆 +50 Culture Credits
+                    </div>
+
+                    <a
+                        href="explore.html"
+                        class="primary-btn"
+                    >
+                        Continue Exploring →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+<script src="js/main.js"></script>
+<script src="js/contribution.js"></script>
+</body>
+
+</html>
